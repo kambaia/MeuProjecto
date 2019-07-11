@@ -1,0 +1,104 @@
+	
+<% include partials/head %>
+
+<link rel="stylesheet" href="/css/main_alunos.css">
+	<button class="btn-menu" id="btn_menu">
+		<span><img src="/img/icon/icons8_Menu.ico"><a href=""></a></span>
+	</button>
+	
+	<div class="menu_aluno" id="menu"> 
+			<ul class="ul_sub">
+			<li>
+					<a href="#"><span><img src="/img/icon/icons8_Add.ico"></span>Cadastrar
+					
+				</a>
+				<ul>
+					<li id="primary" ><a href="/colegios/alunos/adicionar">Novo Estudante</a></li>
+				</ul>
+
+				</li>
+			<li class="">
+				<a href="#">
+					<span><img src="/img/icon/icons8_Data_Backup.ico"></span>
+					
+					Visualizar
+					
+				</a>
+				<ul>
+					<li><a href="#">Todos</a></li>
+					<li><a href="#"> Primaria</a></li>
+					<li><a href="#">1ª Ciclo</a></li>
+					<li><a href="#">2ª Ciclo</a></li>
+				</ul>
+				</li>
+			<li>
+				<a href="#">
+					Acções
+					<span><img src="/img/icon/icons8_Forward.ico" width="20"></span>
+				</a>
+				<ul class="">
+						<li><a href="#"><span><img src="/img/icon/icons8_Edit_File.ico">Editar</span></a></li>
+						<li><a href="#"><span><img src="/img/icon/icons8_Trash.ico">Deletar</a></li>
+
+				</ul>
+			</li>
+			
+		</ul>
+</div>
+
+            <div class="container-flue">
+					<div class="busca">
+							<form>
+							<div class="pesquisar">
+									<input class="filtar"  type="text" id="busca" name="busca" placeholder="Busncar...">
+						  </div>
+						  <div class="btn-pesquisar">
+								 <a href="javascript://"><button class="btn-busca" id="btn_buscar" type="submit">Buscar</button></a>
+							  </div>
+							</form>
+						</div>
+						
+				<div class="head-card">
+					<table class="table table-striped table-bordered">
+					<thead class="thead-dark">
+						<tr>
+						<th scope="col">Nº de Estunte</th>
+						<th scope="col" class="nome">Nome</th>
+						<th scope="col">Data de nascimento</th>
+						<th scope="col">Idade</th>
+						<th scope="col">Genero</th>
+						<th scope="col" class="colegio">Colégio</th>
+						<th scope="col">Curso</th>
+						<th scope="col">Classe</th>
+						<th scope="col" class="tel">Telefone</th>
+						<th scope="col">Foto</th>
+						<th scope="col">Data de registo</th>
+						
+						</tr>
+					</thead>
+					<tbody>
+						<% for(var i = 0; i < alunos.length; i++) { %>
+							<tr>
+								<th <td><%=alunos[i].DadosPessoal_Aluno.numemeroEstudante %></td></th>
+								<td><%=alunos[i].DadosPessoal_Aluno.nome_Estudante %></td>
+								<td><%=alunos[i].DadosPessoal_Aluno.data_nascimento %></td>
+								<td>20</td>
+								<td><%=alunos[i].DadosPessoal_Aluno.genero %></td>
+								<td><%=alunos[i].Colegio%></td>
+								<td><%=alunos[i].DadosPessoal_Aluno.curso %></td>
+								<td><%=alunos[i].DadosPessoal_Aluno.classe%></td>
+								<td class="tel">
+									<%=alunos[i].DadosPessoal_Aluno.movicel%> 
+									-
+									<%=alunos[i].DadosPessoal_Aluno.unitel%>
+								</td>
+								<td><img src="/uploads/alunos/<%=alunos[i].foto_perfil%>" width="50"></td>
+								<td><%=alunos[i].dataCadastro%></td>
+							</tr>
+						<% } %>
+					</tbody>
+					</table>
+				</div>
+   </div>
+
+   <% include partials/footer %>

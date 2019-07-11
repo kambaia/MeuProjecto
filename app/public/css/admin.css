@@ -1,0 +1,233 @@
+
+.container-fluid{
+    z-index: 1;
+}
+.corpo{
+    z-index: 1;
+}
+.content{
+    height: 560px;
+    display: flex;
+    z-index: 1;
+}
+.content .saldo-disp{
+     width: 30%;
+     background: #ccc;
+     position: relative;
+     margin-left: 2%;
+     height: 560px;
+    z-index: 0;
+}
+.content .cap_tabela{
+    text-align: center;
+    height: 180px;
+    border-bottom: 1px solid #008dd1;
+    z-index: 1;
+}
+.foto_perfil{
+    position: relative;
+    height: 140px;
+    width: 140px;
+    left: 20%;
+    top: 5%;
+    border-radius: 50%;
+    z-index: 3;
+}
+.foto_perfil img{
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    width: 100%;
+    transition: 0.4s all;
+     border-radius: 50%;
+    border: 4px solid #008dd1;
+}
+.sobre-min{
+    width: 100%;
+    height: 350px;
+    margin: auto;
+}
+.meu-dados{
+    width: 90%;
+    height: 300px;
+    margin: 2% auto;
+}
+.meu-dados h3{
+    font-size: 20px;
+    text-align: center;
+}
+
+.meu-dados h3{
+     font-size: 20px;
+    text-align: center;
+    border-bottom: 1px solid #008dd1;
+}
+.meu-dados ul{
+      width: 80%;
+      padding: 20px 0px;
+}
+.meu-dados ul li{
+    display: block;
+    border-bottom: 1px solid #008dd1;
+}
+ .content .selacao-activeRec{
+     height: 560px;
+     width: 64%;
+     background-color:#edede6;
+     position: relative;
+     margin-left: 2%;
+     z-index: 0;
+}
+.content  .actividade-rec{
+    width: 100%;
+    z-index: 0;
+    display: flex;
+    height: 250px;
+    text-align: center;
+    position: relative;
+}
+
+.actividade-rec .vivitantes{
+    width: 48%;
+    z-index: 0;
+    height: 240px;
+    margin-left: 2%;
+    border: 1px solid #ccc;
+    position: relative;
+}
+.actividade-rec .clientesCadastrado{
+    width: 45%;
+    z-index: 0;
+    height: 240px;
+    margin-left: 2%;
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+.serv_pagamento{
+    width: 100%;
+    z-index: 0;
+    display: flex;
+    height: 300px;
+    text-align: center;
+}
+.serv_pagamento .pagamentos-feitos{
+    width: 48%;
+    z-index: 0;
+    height: 250px;
+    margin-left: 2%;
+    border: 1px solid #ccc;
+    position: relative;
+}
+.serv_pagamento .carteiras-Cadastradas{
+    width: 45%;
+    z-index: 0;
+    height: 250px;
+    margin-left: 2%;
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+.actividade-rec .vivitantes a{
+    position: absolute;
+    top: 80%;
+    padding: 1px;
+    width: 20%;
+}
+.actividade-rec .clientesCadastradoa{
+    position: absolute;
+    top: 80%;
+    padding: 1px;
+    width: 20%;
+}
+
+.serv_pagamento{
+    width: 100%;
+    z-index: 0;
+    display: flex;
+    height: 300px;
+    text-align: center;
+}
+.serv_pagamento .pagamentos-feitos a{
+    position: absolute;
+    top: 80%;
+    padding: 1px;
+    width: 20%;
+}
+.titulo_recentes{
+    width: 100%;
+    background-color: #008dd1;
+    padding: 4px;
+    color: #edede6;
+    box-shadow: 0px 5px 5px #000;
+}
+.titulo_recentes h3{
+    margin-left: 2%;
+}
+
+
+h4{
+    margin: 4% auto;
+    font-size: 1em;
+}
+.serv_pagamento .carteiras-Cadastradas a{
+    position: absolute;
+    top: 80%;
+    padding: 1px;
+    width: 20%;
+}
+.serv_pagamento .carteiras-Cadastradasa{
+    position: absolute;
+    top: 80%;
+    padding: 1px;
+    width: 20%;
+}
+/* -----------------------------Criar Carteira----------------------*/
+.corpo .criar-carteira h2{
+    text-align: center;
+    z-index: 1;
+}
+.corpo .criar-carteira{
+    width: 50%;
+    margin: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 1;
+}
+.corpo .criar-carteira input{
+    width: 100%;
+    padding: 5px;
+    margin: 2% auto;
+ }
+
+.criar-carteira .btn{
+   width: 20%;
+   padding: 5px;
+   margin: 0% 40%;
+}
+
+.criar-carteira .btn:hover{
+    background: #10456d;
+}
+
+.visitantes{
+    width: 100%;
+}
+.cap_tabela{
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+.table{
+    text-align: center;
+}
+
+.card{
+
+
+}
+.card .caixa-inputs{
+   display: flex;
+   margin: 4% 20%;
+}

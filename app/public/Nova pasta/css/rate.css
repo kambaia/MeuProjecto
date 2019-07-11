@@ -1,0 +1,85 @@
+
+
+.rating > span:hover:before {
+   content: "\2605";
+   position: absolute;
+}
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
+}
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+.rating > span {
+  display: inline-block
+  position: relative;
+  width: 1.1em;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605";
+  ;
+}
+.estrelas input[type=radio]{
+  display: none;
+}.estrelas label i.fa:before{
+  content: '\2605';
+  color: #111;
+
+}.estrelas  input[type=radio]:checked  ~ label i.fa:before{
+  color: #FC0;
+}
+.estrelas{
+  font-size: 15px;
+}
+.estrelas{
+}
+
+.rating > span:hover:before {
+   content: "\2605";
+   position: absolute;
+}
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
+}
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+.rating > span {
+  display: inline-block
+  position: relative;
+  width: 1.1em;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605";
+  ;
+}
+.estrelas input[type=radio]{
+  display: none;
+}.estrelas label i.fa:before{
+  content: '\2605';
+  color: #111;
+
+}.estrelas  input[type=radio]:checked  ~ label i.fa:before{
+  color: #FC0;
+}
+.estrelas{
+  font-size: 15px;
+}
+.estrelas{
+}

@@ -1,0 +1,159 @@
+<% include partials/head %>
+    <div class="container-fluid">
+        <div class="corpo">
+            <div class="caixa-form">
+                <nav>
+                    <div class="logo-img"><img src="/img/logo1.png" width="100"></div>
+                    <div class="btn_nav">
+                        <button class="btn_voltar" id="">
+                             <a href="/encarregados">home</a>
+                           </button>
+                        <button class="btn" id="">
+                             <a href="/encarregados/carteira/minhacarteira">Visão geral da conta</a>
+                           </button>
+                        <button class="btn" id="">
+                            <a href="/encarregados/carteira/verpagamentos">Todas as transfências feitas</a>
+                            </button>
+                    </div>
+                    <button class="btn-sair" id="btn_sair">
+                            <span><img src="/img/icon/icons8_Shutdown.ico" width="25"></span>
+                            </button>
+                </nav>
+
+                <hr>
+                <div class="content">
+                    <div class="trasnsferenca-feitas">
+                        <div class="cap_tabela">
+                            <h3>Certificação dos dados do Estudante</h3>
+                        </div>
+
+                        <table class="table table-striped table-bordered">
+                            <thead class="topo_tab">
+                                <tr>
+
+                                    <th scope="col">Toto de perfil</th>
+                                    <th scope="col">Ciclo</th>
+                                    <th scope="col">Nome do aluno</th>
+                                    <th scope="col">Data_nascimento</th>
+                                    <th scope="col">Genero</th>
+                                    <th scope="col">Colégio</th>
+                                    <th scope="col">Propina</th>
+                                    <th scope="col">Nº de Estudante:</th>
+                                    <th scope="col">Curso</th>
+                                    <th scope="col">Class</th>
+                                    <th scope="col">Turma</th>
+                                </tr>
+                            </thead>
+                            <% if(validacao.length >0){ %>
+                                <div class="alert alert-danger">
+                                    <strong>Atensão!</strong>
+                                    <% for(var i=0; i<validacao.length; i++){ %>
+                                        <ul>
+                                            <li>
+                                                <%=validacao[i].msg %>
+                                            </li>
+                                        </ul>
+                                        <% } %>
+                                </div>
+                                <%  } %>
+                                    <tbody>
+                                        <% for(var i=0; i<aluno.length; i++) { %>
+                                            <tr>
+
+                                                <td><img src="/uploads/alunos/<%=aluno[i].foto_perfil%>" width="50"></td>
+                                                <th>
+                                                    <%=aluno[i].ciclo%>
+                                                </th>
+                                                <td>
+                                                    <%=aluno[i].nome_Estudante %>
+                                                </td>
+                                                <td>
+                                                    <%=aluno[i].data_nascimento %>
+                                                </td>
+                                                <td>
+                                                    <%=aluno[i].genero %>
+                                                </td>
+                                                <td>
+                                                    <%=aluno[i].Colegio%>
+                                                </td>
+                                                <td>
+                                                    <%=aluno[i].propina %> Kz</td>
+                                                <th>
+                                                    <%=aluno[i].numemeroEstudante %>
+                                                </th>
+                                                <td>
+                                                    <%=aluno[i].curso %>
+                                                </td>
+                                                <td>
+                                                    <%=aluno[i].classe%>
+                                                </td>
+                                                <td>
+                                                    <%=aluno[i].turma%>
+                                                </td>
+                                                <% } %>
+                                            </tr>
+
+                                    </tbody>
+
+                        </table>
+                        <hr>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <form action="/encarregados/carteira/entraremprocessoapagar" method="post">
+                                    <h4>Seleciona os meses a pagar</h4>
+                                    <select class="custom-select" name="mesesapagar" id="mesesapagar">
+                                                <option>Escolha as opções </option>
+                                                <option value="1">1 Mês </option>
+                                                <option value="2">2 Mês </option>
+                                                <option value="3">3 Mês </option>
+                                                <option value="4">4 Mês </option>
+                                                <option value="5">5 Mês </option>
+                                                <option value="6">6 Mês </option>
+                                              </select>
+                            </div>
+
+                            <div class="div-parapagar">
+                                <h6>Seleciona quais meses desejas. checando cada um pagar</6>
+                                    <hr>
+                                    <div class="card-mese">
+                                        <input type="checkbox" name="meses" value="fevereiro">Fev
+                                        <input type="checkbox" name="meses" value="março"> mar
+                                        <input type="checkbox" name="meses" value="abril">Abr
+                                        <input type="checkbox" name="meses" value="maio"> maio
+                                        <input type="checkbox" name="meses" value="junho"> jun
+                                        <input type="checkbox" name="meses" value="julho">jul
+                                        <input type="checkbox" name="meses" value="Agosto">Ago
+                                        <input type="checkbox" name="meses" value="Setembro"> Set
+                                        <input type="checkbox" name="meses" value="Outubro">Out
+                                        <input type="checkbox" name="meses" value="Novembro">Nov
+                                        <input type="checkbox" name="meses" value="Dezembro">Dez>Jan
+                                    </div>
+                                    <div class="alert-danger" id="aviso"><strong>Atenção!</strong><br>Ao digitar o valor não digite com virgula ou ponto conforme está na propina do seu educando.<br> Tipo 5.00,00 kz isso não! Digite conforme o exemplo que está no campo de valor
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <input type="number" class="form-control" name="numeroConta" id="numContacolegio" placeholder="Nº de conta do colégio" autocomplete="off">
+                                            <span id="numeroContaErro" class="text-danger"></span>
+                                        </div>
+                                        <div class="col">
+                                            <div id="resultado"></div>
+                                            <input type="number" class="form-control" name="valor_apagar" id="valor_apagar" placeholder="Digite aqui o valor... ex: 18220" autocomplete="off">
+                                            <span id="valor_apagar" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-success">Transferir</button>
+                                    </form>
+                            </div>
+                        </div>
+                        <div class="painel">
+                            <div class="painel_load">
+                                <img src="/img/load/tenor.gif">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <% include partials/footer%>

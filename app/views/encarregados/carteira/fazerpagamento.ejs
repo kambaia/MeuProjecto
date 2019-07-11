@@ -1,0 +1,30 @@
+<% include ./partials/head %>
+    <% include partials/nav %>
+
+        <div class="card">
+            <div class="card-body">
+                <h2>Fazer pagamento</h2>
+                <hr>
+                <div class="div-deconfirmacaodadosencarregado">
+                    <form action="/encarregados/carteira/fazerpagamento" method="post">
+                        <div class="col-sm-12">
+                            <div class="caixa-inputs">
+                                <div class="input_text"> </div>
+                                <input type="number" name="nuConta_encarregado" id="nuConta_encarregado" placeholder="Confirma aqui o seu nº de conta..." class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="caixa-inputs">
+                                <div class="input_text"> </div>
+                                <input type="number" name="codigoPessoal" id="codigoPessoal" placeholder="Digita aqui o Código de identificação do seu Educando Ou nº de estudante" class="form-control" required>
+                            </div>
+                            <div class="col-sm-12">
+                                <button type="submit" class="btn btn-primary" id="btn_transferir">Avançar</button>
+                            </div>
+                    </form>
+                    </div>
+                </div>
+            </div>
+
+
+            <% include partials/footer%>

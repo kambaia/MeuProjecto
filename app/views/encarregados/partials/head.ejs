@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="/image/png" sizes="96x96" href="/img/logo.png">
+    <title>PCO-Pagamentos Colegias Online</title>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:700, 600,500,400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/style_encarregado.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/admin.css">
+    <link rel="stylesheet" href="/css/erro.css">
+</head>
+
+<body>
+    <header>
+        <div id="topo-menus">
+            <div class="logo">
+                <div class="img_logo">
+                    <div class=""><img src="/img/logo.png" width="100"></div>
+                </div>
+            </div>
+
+            <nav id="menu-colegios">
+                <ul id="ul-principal">
+                    <li class="li-p home" id="home">
+                        <a href="/encarregados">Home</a>
+                    </li>
+                    <li class="li-p">
+                        <a href="javascript://" class="bt-click1">
+                                   Encarregados
+                                   <img src="/img/icon/icons8_Sort_Down.ico" width="20">
+                                </a>
+                        <ul class="ul-sobreNos">
+                            <li>
+                                <a href="#"></a>
+                            </li>
+                            <li><a href="/encarregados/convocatorias_atual">Recentes</a></li>
+                            <li><a href="/encarregados/todasconvocatorias">A dois mêses</a></li>
+                            <li><a href="/encarregados/todasconvocatorias">Todas</a></li>
+
+                        </ul>
+
+                    </li>
+
+                    <li class="li-p">
+                        <a href="javascript://" class="bt-click4">
+                                 Carteira
+                                    <img src="/img/icon/icons8_Sort_Down.ico" width="20">
+                                </a>
+                        <ul class="ul-pagar">
+                            <li><a href="/encarregados/carteira">Acessar Carteira</a></li>
+                            <li><a href="/encarregados/criar_carteira">Criar carteira </a></li>
+                        </ul>
+                    </li>
+
+
+            </nav>
+
+            <div id="opcoa_de-sair">
+                <div class="menus-configuracao">
+                    <a href="#"><img src="/img/icon/icons8_Notification.ico"></a>
+                    <a href="/colegios/configuracoes"><img src="/img/icon/icons8_Settings.ico"></a>
+                    <!---/colegios/perfilcolegio-->
+                    <a href="#" id="sair"><img src="/img/icon/icons8_Export.ico"></a>
+                </div>
+                <div id="perfil-usuario">
+                    <%if(foto==undefined) { %>
+                        <img src="/uploads/img_colegios/logo.png" width="30">
+                        <% } else { %>
+                            <img src="/uploads/img_encarregados/<%=foto %>" width="30">
+                            <% } %>
+                </div>
+            </div>
+        </div>
+
+    </header>

@@ -1,0 +1,169 @@
+<% include partials/head %>
+    <link rel="stylesheet" href="css/main_paginas.css">
+    <link rel="stylesheet" href="css/main_paginas.css">
+    <section class="banner_site">
+
+        <header class="cabecalho">
+            <div id="discri">
+                <h2 id="titulo">Registro Dos colégios</h2>
+
+            </div>
+        </header>
+    </section>
+    <div class="caixa-op">
+
+        <% if(validacao.length >0){ %>
+            <div class="erro">
+                <strong>Atensão!</strong>
+                <% for(var i=0; i<validacao.length; i++){ %>
+                    <ul>
+                        <li>
+                            <%=validacao[i].msg %>
+                        </li>
+                    </ul>
+                    <% } %>
+            </div>
+            <%  } %>
+
+
+                <section class=cadastrar>
+                    <div class="container-fluid">
+                        <div class="container">
+                            <div class="colegio">
+
+                                <div class="caixa-form">
+                                    <div class="fotoperfil">
+                                        <img src="/img/user1.png" id="imagem" width="" class="img-thumbnail">
+                                    </div>
+                                    <form action="/usuarios-cadastrarColegios" method="POST" enctype="multipart/form-data">
+                                        <div class="row">
+
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="inputGroupFileAddon01">Adicionar</span>
+                                                </div>
+                                                <div class="custom-file">
+                                                    <input type="file" class="custom-file-input" id="upload" name="logocolegio" aria-describedby="inputGroupFileAddon01">
+                                                    <label class="custom-file-label" for="inputGroupFile01">Escolha e adiciona uma foto de perfil</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6">
+                                                <div class="caixa-inputs">
+                                                    <div class="input_text"> </div>
+                                                    <input class="form-control" type="text" id="Nome_Colegio" name="Nome_Colegio" autocomplete="off" placeholder="Nome do colégio:" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="caixa-inputs">
+                                                    <div class="input_text"> </div>
+                                                    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" autocomplete="off" placeholder="Email:" required>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6">
+                                                <div class="caixa-inputs">
+                                                    <div class="input_text"> </div>
+                                                    <input class="form-control" type="password" id="senha" name="senha" autocomplete="off" placeholder="Senha:" required>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6">
+                                                <div class="caixa-inputs">
+                                                    <div class="input_text"></div>
+                                                    <input class="form-control" type="password" id="confirmaSenha" autocomplete="off" name="confirmaSenha" placeholder="confirmar senha:" required>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6">
+                                                <div class="caixa-inputs">
+                                                    <div class="input_text"> </div>
+                                                    <label>Data de fundação do colégio</label>
+                                                    <input type="date" name="data_fundacao" class="form-control" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="caixa-inputs">
+                                                    <label>Nº  NIF</label>
+                                                    <div class="input_text"> </div>
+                                                    <input type="text" name="numeroBI" placeholder="Insira o NIF:" class="form-control" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <div class="caixa-inputs">
+                                                    <div class="input_text focus"> </div>
+                                                    <input type="text" class="form-control" id="nome" name="nome" autocomplete="off" placeholder="Nome do administrador do colégio ou director administrativo:" required>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6">
+                                                <div class="caixa-inputs">
+                                                    <label>Seleciona a provincia em que se encontra Complexo</label>
+                                                    <div class="input_text"></div>
+
+                                                    <select name="provincia" class="form-control" required>
+                                                    <option value="Luanda">Luanda</option>
+                                                    <option value="Benguela">Benguela</option>
+                                                    <option value="Huila">Huila</option>
+                                                    <option value="Moxico">Moxico</option>
+                                                    <option value="Bié">Bié</option>
+                                                    <option value="Huambo">Huila</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="col-sm-6">
+                                                <label>Digite abaixo o município</label>
+                                                <div class="caixa-inputs">
+                                                    <div class="input_text"> </div>
+                                                    <input type="text" name="municipio" placeholder="Múniciopio:" class="form-control" required>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="col-sm-8">
+                                                <div class="caixa-inputs">
+                                                    <div class="input_text"> </div>
+                                                    <input type="text" name="bairro" placeholder="Bairro ou cidade na qual se encontra o colégio:" class="form-control" required>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-4">
+                                                <div class="caixa-inputs">
+                                                    <div class="input_text"> </div>
+                                                    <input type="text" name="rua" placeholder="Rua:" class="form-control" required>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6">
+                                                <div class="caixa-inputs">
+                                                    <div class="input_text"> </div>
+                                                    <input type="tel" name="tel_movicel" placeholder="244-992-735-537" class="form-control" required min="2" max="9">
+                                                </div>
+                                            </div>
+
+
+                                            <div class="col-sm-6">
+                                                <div class="caixa-inputs">
+                                                    <div class="input_text"> </div>
+                                                    <input type="tel" name="tel_unitel" placeholder=" 244-923-735-537" class="form-control" required min="2" max="9">
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+
+                                        <div class="col-sm-12">
+                                            <input type="submit" value="Cadastrar" class="btn btn-primary" id="enviar">
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+    </div>
+    <% include partials/footer%>

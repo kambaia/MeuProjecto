@@ -1,0 +1,82 @@
+<% include partials/head %>
+
+
+    <div class="container-flue">
+        <nav class="navbar">
+            <ul class="menu-li">
+                <a href="/colegios/configuracoes">Conta</a></li>
+                <a href="/colegios/definicao">Informações</a></li>
+            </ul>
+
+        </nav>
+        <div class="container">
+            <div class="perfil-geral">
+                <div class="foto">
+                    <div class="foto_per">
+                        <h4>Perfil</h4>
+
+                        <%if(foto==undefined) { %>
+                            <img src="/uploads/img_colegios/logo.png" width="120">
+                            <% } else { %>
+                                <img src="/uploads/img_colegios/<%=foto %>" width="120" height="120">
+                                <h4>Atualizar</h4>
+                                <% } %>
+                    </div>
+                    <div class="sobre-nome">
+                        <h4>Cadastrado em: </h4>
+                        <%=dado_colegio.dataCadastro %>
+                            <h3>Colégio: </h3>
+                            <%=dado_colegio.colegio %>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="perfil-endereco">
+                <div class="sobre-col">
+                    <h4>Endereço</h4>
+                    <span>provincia:<%=dado_colegio.provic %><br> </span>
+                    <span>Municipio:<%=dado_colegio.munic %><br> </span>
+                    <span>Cidade/Bairro: <%=dado_colegio.bairro %><br> </span>
+                    <span>Rua: <%=dado_colegio.rua %><br></span>
+                    <div class="edite">
+                        <span><a href="#">Editar</a></span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---------------------Informações para serem editada---------------------->
+        <div class="container">
+            <div class="perfil-geral">
+                <div class="sobre-col">
+                    <h4>Sobre O colégio</h4>
+                    <span><%= dado_colegio.email %><br></span>
+                    <span></span>
+                    <%= dado_colegio.nome %><br></span>
+                        <span><%= dado_colegio.data_fundacao %><br></span>
+                        <div class="edite">
+                            <span><a href="#">Editar</a></span>
+                        </div>
+
+                </div>
+            </div>
+            <div class="perfil-endereco">
+                <div class="sobre-col">
+                    <h4>Contacto</h4>
+                    <span><%=dado_colegio.tel_mov %></span>
+                    <span><%=dado_colegio.tel_uni %></span>
+                    <span><%=dado_colegio.email %></span>
+                    </li>
+                    -->
+                    <div class="edite">
+                        <span><a href="/colegios/editColegio">Editar</a></span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <% include partials/footer %>

@@ -1,0 +1,52 @@
+
+ 
+    <% include partials/head %>
+         
+            <div class="card-body">
+            
+              
+                    <div class="modal-card">
+                            <form action="/colegios/perfilcolegio" method="POST">
+                                
+                                <div class="topo">
+                                        <h2>Adicionar Alunos</h2>
+                                        <hr>
+                                </div>
+                              
+                                        <label>Nome Completo do Estudante</label ><br>
+                                    
+                                            <input type="text" name="Nome_Colegio" placeholder="Nome da Instituição:" class="form-control">
+                                        
+                                        <label>Data de nascimento</label><br>
+                                        <input type="date" name="data_fundacao" class="form-control">
+
+                                        <label>Seleciona o Genero</label><br>
+                                        <select name="provincia" class="form-control"><br>
+                                                <option>Masculino</option>
+                                                <option>Femenino</option>
+                                               
+                                            </select><br>
+                                        <label>Encarregado do Estudante</label><br>
+                                        <select name="provincia" class="form-control"><br>
+                                                <option>Nenhum Encarregado</option>
+                                               
+                                            </select><br>
+                                        <label>Curso</label>
+                                        <input type="text" name="municipio" placeholder="Curso:" class="municipio">
+                                        <label>Classe</label>
+                                        <input type="text" name="bairro" placeholder="Classe:" class="bairro">
+                                        <label>Turma</label>
+                                        <input type="text" name="turma" placeholder="Turma:" class="rua">
+                                        <label>Telefone de Casa</label>
+                                        <input type="tel" name="casa" placeholder="Telefone de Casa" class="casa">
+                                        <label>Movicel</label>
+                                        <input type="tel" name="movicel" placeholder="Telefone de Pai"  class="movicel">
+                                        <label>Unitel</label>
+                                        <input type="tel" name="unitel" placeholder="Telefone de Mãe" class="unitel">
+                                    <button type="submit" class="btn btn-primary" id="btn_terminar">Salvar</button>
+                            </form>
+                        </div>
+                        
+                </div>
+        
+       

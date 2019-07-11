@@ -1,0 +1,61 @@
+<% include partials/head %>
+    <nav class="nav-bar">
+        <h2>Convocatoria Enviadas</h2>
+    </nav>
+    <div class="paineis-geral">
+
+        <div class="table-responsive">
+            <table class="table table-sm">
+                <thead class="topo_tab">
+                    <tr>
+                        <th scope="col">Data</th>
+                        <th scope="col">Enviado por</th>
+                        <th scope="col">Assunto</th>
+                        <th scope="col">Subtito</th>
+                        <th scope="col">Comunicado</th>
+                        <th scope="col">colégio</th>
+                        <th scope="col">Editar</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <% for(var i=0; i<convocatoria.length; i++) { %>
+                        <tr>
+                            <% if(convocatoria.length > 0) { %>
+                                <td>
+                                    <%=convocatoria[i].Comunicado.data_convocatoria%>
+                                </td>
+                                <td>
+                                    <%=convocatoria[i].usuarioLogin %>
+                                </td>
+                                <td>
+                                    <%=convocatoria[i].Comunicado.Assunto_convocatoria %>
+                                </td>
+
+                                <td>
+                                    <%=convocatoria[i].Comunicado.subtitulo_convocatoria %>
+                                </td>
+
+                                <td>
+                                    <%=convocatoria[i].Comunicado.mesagem_convocatoria %>
+                                </td>
+
+                                <td>
+                                    <%=convocatoria[i].Colegio %>
+                                </td>
+                                <td>
+                                    <a href="/colegios/verconvocatoria/edit/<%=convocatoria[i]._id%>"><img id="edite-bot" src="/img/icon/Edit Message.png"></td>
+
+                        </tr>
+                        <% } else{ %>
+
+                            <h5>Nenhum dados encontrado</h5>
+                            <% } %>
+                </tbody>
+                <% } %>
+            </table>
+        </div>
+    </div>
+
+
+    <% include partials/footer %>

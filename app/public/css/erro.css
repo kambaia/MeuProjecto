@@ -1,0 +1,29 @@
+/*----------------------------------edição da div de erros -------------------------*/
+
+.erro-de-acesso {
+    width: 100%;
+    text-align: center;
+}
+
+.erro {
+    width: 50%;
+    margin: 2% auto;
+    color: #ccc;
+    text-align: center;
+}
+
+.erro-btn {
+    background: rgb(202, 13, 13);
+    color: cadetblue;
+    padding: 4px;
+    width: 25%;
+    border-style: none;
+    border-radius: 2px;
+    position: relative;
+}
+
+.erro-btn .centa {
+    left: 90%;
+    position: absolute;
+    bottom: 1px;
+}

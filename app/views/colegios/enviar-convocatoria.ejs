@@ -1,0 +1,41 @@
+<% include partials/head %>
+    <nav class="nav-bar">
+        <div id="enviar-convoca">
+            <h2 class="card-title">Enviar Convocatória </h2>
+        </div>
+    </nav>
+    <div class="paineis-geral">
+
+        <div class="paineis-geral">
+
+            <div class="card" id="card-envio-convocatoria">
+
+                <form action="/colegios/addconvocatoria" method="POST">
+
+                    <div class="form-group mb-2">
+
+                        <input type="text" name="Assunto_convocatoria" placeholder="Titule da Convocatória:" class="form-control" required>
+                    </div>
+                    <div class="form-group mb-2">
+                        <input type="text" name="subtitulo_convocatoria" placeholder="Subtitulo:" class="form-control" required>
+                    </div>
+
+                    <div class="form-group mb-2">
+                        <label>Data de encontra ou data da realização da Convocatória</label>
+
+                        <input type="date" name="data_convocatoria" class="form-control" required>
+                    </div>
+                    <div class="form-group mb-2">
+                        <textarea class="form-control" name="mesagem_convocatoria" placeholder="Digite aqui a mensagem na qual deseja informar" required></textarea>
+                    </div>
+                    <div class="form-group mb-2">
+
+                        <button type="submit" class="btn btn-primary" id="btn_terminar">Enviar</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <% include partials/footer %>

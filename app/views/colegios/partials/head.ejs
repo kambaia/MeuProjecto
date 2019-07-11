@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="/image/png" sizes="96x96" href="/img/logo.png">
+    <title>PCO-Pagamentos Colegias Online</title>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:700, 600,500,400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/style-colegio.css">
+    <link rel="stylesheet" href="/css/estilo-principal-colegio.css">
+
+
+
+
+
+
+</head>
+
+<body>
+    <header id="topo-site">
+        <div id="topo-menus">
+            <div class="logo">
+                <div class="img_logo">
+
+                    <a href="/colegios"><img src="/img/logo.png" width="100"></a>
+
+                </div>
+            </div>
+
+            <nav id="menu-colegios">
+                <div id="submenus">
+
+                    <ul id="ul-principal">
+                        <li class="li-p home" id="home">
+                            <a href="/colegios">Home</a>
+                        </li>
+                        <li class="li-p">
+                            <a href="javascript://" class="bt-click1">
+                               Encarregados
+                               <img src="/img/icon/icons8_Sort_Down.ico" width="20">
+                            </a>
+                            <ul class="ul-sobreNos">
+                                <li><a href="/colegios/verconvocatoria">Todos</a></li>
+                                <li><a href="/colegios/enviarconvocatoria"> Enviar convocatória</a></li>
+
+                            </ul>
+
+                        </li>
+                        <li class="li-p">
+                            <a href="javascript://" class="bt-click2">
+                                Alunos
+                                <img src="/img/icon/icons8_Sort_Down.ico" width="20">
+                            </a>
+                            <ul class="ul-encarregado">
+                                <li><a href="/colegios/addalunos">Cadastrar Estudante</a></li>
+                                <li><a href="/colegios/alunos/listaralunos">Todos Alunos</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="li-p">
+                            <a href="javascript://" class="bt-click4">
+                                Carteira
+                                <img src="/img/icon/icons8_Sort_Down.ico" width="20">
+                            </a>
+                            <ul class="ul-pagar">
+                                <li><a href="/colegios/carteira">Acessar Carteira</a></li>
+                                <li><a href="/colegios/criar_carteira">Criar carteira </a></li>
+                            </ul>
+                        </li>
+
+
+                </div>
+
+            </nav>
+
+            <div id="opcoa_de-sair">
+                <div class="menus-configuracao">
+                    <a href="#"><img src="/img/icon/icons8_Notification.ico"></a>
+                    <a href="/colegios/configuracoes"><img src="/img/icon/icons8_Settings.ico"></a>
+                    <!---/colegios/perfilcolegio-->
+                    <a href="#" id="sair"><img src="/img/icon/icons8_Export.ico"></a>
+                </div>
+
+
+                <div id="perfil-usuario">
+                    <% if(foto==="undefined"){ %>
+                        <img src="/uploads/img_colegios/logo.png" width="30">
+                        <% } else { %>
+                            <img src="/uploads/img_colegios/<%=foto %> %>" width="30">
+                            <% } %>
+                </div>
+
+
+            </div>
+            <div class="menus-desponsivo">
+                <div class="menu-sub" id="menu-sub">
+                    <img src="/img/icon/icons8_Menu.ico" width="40">
+                </div>
+                <div class="menu-sub" id="menu-close">
+                    <img src="/img/icon/close_window.png" width="40">
+                </div>
+            </div>
+    </header>

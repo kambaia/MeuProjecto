@@ -1,0 +1,228 @@
+body {
+    background: url(../img/background-azul.gif);
+}
+
+header {
+    width: 100%;
+    height: 150px;
+}
+
+header .infor .dialog1 {
+    color: #fff;
+}
+
+header .infor .dialog1 h2 {
+    float: left;
+    margin-left: 50%;
+    margin-top: -2%;
+}
+
+;
+header .infor h3 {
+    float: left;
+}
+
+header .dialog1 {
+    width: 100%;
+}
+
+header .infor .dialog {
+    width: 100%;
+    color: #a1a39e;
+}
+
+header .infor .dialog li {
+    width: 40%;
+    float: left;
+    display: inline-block;
+}
+
+header .infor .dialog span {
+    width: 50%;
+    float: left;
+    margin: 2%;
+}
+
+.group-adress {
+    text-align: center;
+}
+
+.caixa-op {
+    height: 100vh;
+    background: #f00;
+}
+
+.cab-login {
+    color: #fff;
+    text-align: center;
+    border-bottom: 2px solid #fff;
+    margin-top: 3%;
+}
+
+.cadastrarColegio label {
+    color: #ccc;
+    text-align: left;
+}
+
+
+/*----------------------------------Edição do login -------------------------*/
+
+.caixa-login {
+    width: 100%;
+}
+
+.caixa-login .btn-acesso-registo {
+    position: relative;
+    text-align: center;
+}
+
+.caixa-login .irLogin {
+    text-align: center;
+    margin-top: 2%;
+    padding: 5px;
+}
+
+.caixa-login .btn-acesso-registo .btn {
+    border: 1px solid#ccc;
+    color: #fff;
+    width: 40%;
+}
+
+.cadastrarColegio .card-title {
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+
+.cadastrarColegio .form-control {
+    margin: 2% auto;
+    width: 90%;
+    padding: 8px;
+    border-radius: 2px;
+    border-style: none;
+}
+
+#cadastrar {
+    width: 450px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    margin-top: 5%;
+    text-align: center;
+    padding: 5px;
+}
+
+#cadastrar form {
+    width: 100%;
+    margin-top: -4%;
+}
+
+#cadastrar input {
+    background-repeat: no-repeat;
+    background-position: 10px;
+    padding-left: 40px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#cadastrar img {
+    width: 100%;
+    max-width: 120px;
+    height: 120px;
+    margin-top: -60px;
+    margin-bottom: 30px;
+}
+
+input.email {
+    background-image: url(../img/icone-usuario.png);
+    width: 40%;
+}
+
+input.senha {
+    background-image: url(../img/icone-cadeado.png);
+    width: 40%;
+}
+
+.cadastrar form {
+    width: 40%;
+    margin: 3% auto;
+    color: #fff;
+}
+
+.cadastrar .btn {
+    width: 20%;
+}
+
+.cadastrar .btn:hover {
+    background-color: rgba(4, 29, 86, 0.5);
+    border-style: none;
+}
+
+.cadastrar .btnEscrever {
+    margin-left: 2%;
+}
+
+
+/*----------------------------------fim -------------------------*/
+
+
+/*----------------------------------Modal -------------------------*/
+
+.painel {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+}
+
+.painel_load {
+    margin: 25% auto;
+    width: 70%;
+    height: 250px;
+}
+
+.painel_load img {
+    margin: auto 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.modal-title {
+    font: 300;
+    text-align: center;
+}
+
+
+/*----------------------------------edição da div de erros -------------------------*/
+
+.erro-de-acesso {
+    width: 100%;
+    background: #f00;
+}
+
+.erro {
+    width: 50%;
+    margin: 2% auto;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #f0f;
+    text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+    .cadastrar form {
+        width: 90%;
+        color: #fff;
+    }
+    .cadastrar .btn {
+        width: 20%;
+    }
+    .cadastrar .btn:hover {
+        background-color: rgba(4, 29, 86, 0.5);
+        border-style: none;
+    }
+    .cadastrar .btnEscrever {
+        margin-left: 2%;
+    }
+}

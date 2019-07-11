@@ -1,0 +1,24 @@
+
+ 
+    <% include partials/head %>
+         
+                            <div class="container">
+                                    
+                                <div class="card-body">
+                                        <h2 class="card-title">Enviar Convocatória</h2>
+                                        <hr>
+                                        <form action="/colegios/addconvocatoria" method="POST">
+                                                <label>Assunto:</label ><br>
+                                                <input type="text" name="Assunto_convocatoria" placeholder="Titule da Convocatória:" class="form-control" required>
+                                                <label>Subtitulo:</label ><br>
+                                                <input type="text" name="subtitulo_convocatoria" placeholder="Subtitulo:" class="form-control" required>
+                                                <label>Data do comunicado</label><br>
+                                                <input type="date" name="data_convocatoria" class="form-control" required>
+                                                <label>Mensagem</label>
+                                                <textarea class="form-control" name="mesagem_convocatoria" required></textarea>
+                                                <button type="submit" class="btn btn-primary" id="btn_terminar">Salvar</button>
+                                        </form>
+                                </div>
+                            </div>
+                            
+       

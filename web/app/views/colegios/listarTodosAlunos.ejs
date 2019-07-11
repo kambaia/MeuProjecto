@@ -1,0 +1,42 @@
+			
+    <% include partials/head %>	
+            
+            <div class="container-flue">
+				<div class="head-card">
+					<table class="table table-border">
+					<thead class="thead-dark">
+						<tr>
+						<th scope="col">Nº de Estunte</th>
+						<th scope="col">Nome</th>
+						<th scope="col">Data de nascimento</th>
+						<th scope="col">Idade</th>
+						<th scope="col">Genero</th>
+						<th scope="col">Colégio</th>
+						<th scope="col">Curso</th>
+						<th scope="col">Classe</th>
+						<th scope="col" scope="3">Telefone</th>
+						<th scope="col">Data de cadastro</th>
+						</tr>
+					</thead>
+					<tbody>
+						<% for(var i = 0; i < alunos.length; i++) { %>
+							<tr>
+								<th <td><%=alunos[i].DadosPessoal_Aluno.numemeroEstudante %></td></th>
+								<td><%=alunos[i].DadosPessoal_Aluno.nome_Estudante %></td>
+								<td><%=alunos[i].DadosPessoal_Aluno.data_nascimento %></td>
+								<td>20</td>
+								<td><%=alunos[i].DadosPessoal_Aluno.genero %></td>
+								<td><%=alunos[i].Colegio%></td>
+								<td><%=alunos[i].DadosPessoal_Aluno.curso %></td>
+								<td><%=alunos[i].DadosPessoal_Aluno.classe%></td>
+		
+								<td><%=alunos[i].DadosPessoal_Aluno.Telefone_casa %></td>
+								<td><%=alunos[i].DadosPessoal_Aluno.movicel%></td>
+								<td><%=alunos[i].DadosPessoal_Aluno.unitel%></td>
+								<td><%=alunos[i].dataCadastro%></td>
+							</tr>
+						<% } %>
+					</tbody>
+					</table>
+				</div>
+   </div>

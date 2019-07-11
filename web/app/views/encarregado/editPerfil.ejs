@@ -1,0 +1,52 @@
+
+    <% include partials/head %>
+          
+    <div class="container-flue">
+                <div class="row p-12">
+                        <div class="col-md-12 offset-md-3">
+                                <div class="card">
+                                    <div class="card-body enc">
+                                       <h2 class="card-title">Editar o Perfil</h2>
+                                       <hr>
+                                       <form action="/encarregado/addperfil" method="POST">
+                                                <label>Nome completo do encarregado</label ><br>
+                                                <input type="text" name="Nome_encarregado" placeholder="Insira aqui o seu nome completo:" class="form-control" >
+                                                <label>Data de nascimento</label><br>
+                                                <input type="date" name="data_nascimento" class="form-control" >
+                                                 <label>Seleciona o sexo</label>
+                                                 <select name="genero" class="form-control"><br>
+                                                        <option value="Masculino">Masculino</option>
+                                                        <option value="Femenino">Femenino</option>
+                                                    </select><br>
+                                                <label>Nº BI</label>
+                                                <input type="text" name="numeroBI" placeholder="Inserira o seu nº do BI:" class="municipio" ><br>
+                                                 <label>Seleciona a provincia em que nasceste</label>
+                                                <select name="provincia" class="form-control"><br>
+                                                        <option value="Luanda">Luanda</option>
+                                                        <option value="Benguela">Benguela</option>
+                                                        <option value="Huila">Huila</option>
+                                                        <option value="Moxico">Moxico</option>
+                                                        <option value="Bié">Bié</option>
+                                                        <option value="Huambo">Huila</option>
+                                                    </select><br>
+                                               
+                                                <input type="text" name="municipio" placeholder="Múniciopio:" class="municipio" >
+                                                
+                                                <input type="text" name="bairro" placeholder="Bairro" class="bairro" >
+                                               
+                                                <input type="text" name="rua" placeholder="Rua:" class="rua">
+                                              
+                                                <input type="tel" name="casa" placeholder="Telefone DE casa" class="casa" >
+                                               
+                                                <input type="tel" name="movicel" placeholder="244-992-735-537"  class="movicel">
+                                               
+                                                <input type="tel" name="unitel" placeholder=" 244-923-735-537" class="unitel">
+                                            <button type="submit" class="btn btn-primary" id="btn_terminar">Salvar</button>
+                                    </form>
+                                    </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+        
+       

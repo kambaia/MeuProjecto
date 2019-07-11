@@ -1,0 +1,143 @@
+<% include ../partials/head %>
+
+    <link rel="stylesheet" href="/css/main_alunos.css">
+
+    <div class="container-flue">
+        <nav class="nav-bar">
+            <div id="">
+                <h2 class="card-title">Lista de todos os Alunos</h2>
+            </div>
+        </nav>
+        <div class="busca">
+            <!----------------------Consulta-->
+
+            <form class="filtros" action="/colegios/alunos/filtrosdepesuisa" method="POST" id="">
+                <div class="pesquisar">
+                    <input class="form-control filtar" type="text" id="busca" name="busca" placeholder="Busncar pelo Estudante...">
+                </div>
+                <div class="filtro-aluno">
+
+                    <select class="custom-select" name="ciclo">
+                                    <option selected>Nivel...</option>
+                                    <option value="2º ciclo">2º ciclo</option>
+                                    <option value="1º ciclo">1º ciclo</option>
+                                    <option value="primaria">Primaria</option>
+									
+					 </select>
+
+                    </select>
+                    <select class="custom-select" name="curso" id="filtros-pesquisa">
+							<option selected>Curso...</option>
+							<% for(var i = 0; i < alunos.length; i++) { %>
+									<option value=" <%=alunos[i].curso %>"> <%=alunos[i].curso %></option>
+									<% } %>
+							  </select>
+
+                    </select>
+                    <select class="custom-select mr" name="classe">
+                            <option selected>Classe....</option>
+                            <option value="13ª">13ª</option>
+                            <option value="12ª">12ª</option>
+                            <option value="11ª">11ª</option>
+                            <option value="10ª">10ª</option>
+                            <option value="9ª">9ª</option>
+                            <option value="8ª">8ª</option>
+                            <option value="7ª">7ª</option>
+                            <option value="6ª">6ª</option>
+                            <option value="5ª">5ª</option>
+                            <option value="4ª">4ª</option>
+                            <option value="3ª">3ª</option>
+                            <option value="2ª">2ª</option>
+                            <option value="1ª">1ª</option>
+                         </select>
+                    <select class="custom-select mr" name="ano">
+                            
+                                    <option selected>Ano Letivo...</option>  
+                                    <option value="2019">2019</option>  
+                                    <option value="2018">2018</option> 
+                                    <option value="2017">2017 </option> 
+                                    <option value="2017">2016</option>         
+                               </select>
+
+                </div>
+                <div class="btn-pesquisar">
+                    <a href="javascript://"><button class="btn btn-info" id="btn_buscar" type="submit">Buscar</button></a>
+                </div>
+                <div class="btn-pesquisar">
+                    <button class="btn edit-estud" id="btn_buscar" type="submit"><a href="/colegios/alunos/editar">Painel de edição</a></button>
+                </div>
+                <div class="btn-pesquisar">
+                    <button class="btn add-estud" id="btn_buscar" type="submit"><a href="/colegios/addalunos">Adicionar novo</a></button>
+                </div>
+            </form>
+        </div>
+        <!-------------------------------Fim da consulta------------------------------------------------------->
+        <div class="head-card">
+            <div class="table-responsive">
+                <table class="table table-sm  table-bordered">
+                    <thead class="thead-primary">
+                        <tr>
+                            <th scope="col">Id</th>
+                            <th scope="col">Nº de Estunte</th>
+                            <th scope="col" class="nome">Nome</th>
+                            <th scope="col">Nascido em</th>
+                            <th scope="col">Idade</th>
+                            <th scope="col">Genero</th>
+                            <th scope="col" class="colegio">Propina</th>
+                            <th scope="col">Curso</th>
+                            <th scope="col">Classe</th>
+                            <th scope="col" colspan="2">Telefone</th>
+                            <th scope="col">Foto</th>
+                            <th scope="col">Data de registo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% for(var i = 0; i < alunos.length; i++) { %>
+                            <tr>
+
+                                <th>
+                                    <img src="/img/icon/key.png" width="20">
+                                    <%=alunos[i].codigoPessoal %>
+                                </th>
+                                <th>
+                                    <%=alunos[i].numemeroEstudante %>
+                                </th>
+                                <td>
+                                    <%=alunos[i].nome_Estudante %>
+                                </td>
+                                <td>
+                                    <%=alunos[i].data_nascimento %>
+                                </td>
+                                <td>20</td>
+                                <td>
+                                    <%=alunos[i].genero %>
+                                </td>
+                                <td>
+                                    <%=alunos[i].propina%>Kz</td>
+                                <td>
+                                    <%=alunos[i].curso %>
+                                </td>
+                                <td>
+                                    <%=alunos[i].classe%>
+                                </td>
+                                <td>
+                                    <%=alunos[i].tel_pai%>
+                                </td>
+                                <td>
+                                    <%=alunos[i].tel_mae%>
+                                </td>
+                                <td><a href="/colegios/alunos/editar/al/<%=alunos[i]._id%>"><img src="/uploads/alunos/<%=alunos[i].foto_perfil%>" width="50" height="40" ></a></td>
+                                <td>
+                                    <%=alunos[i].anoLetvo.dia %>/
+                                        <%=alunos[i].anoLetvo.mes %> /
+                                            <%=alunos[i].anoLetvo.ano %>
+                                                <%=alunos[i].anoLetvo.hora %>
+                                </td>
+                                <% } %>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <% include ../partials/footer%>

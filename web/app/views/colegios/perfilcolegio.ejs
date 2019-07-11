@@ -1,0 +1,53 @@
+
+ 
+    <% include partials/head %>
+
+    
+    <div class="container">
+                <div class="card-body">
+                    <h2 class="card-title">Editar o Perfil</h2>
+        
+                        <% for(var i=0; i<dadosColegio.length; i++) { %>   
+                                <% if(dadosColegio.length > 0) { %>
+                        <form action="/colegios/perfilcolegio" method="POST">
+                                <label>Nome do Complexo Escola</label ><br>
+                                <input type="text" name="Nome_Colegio" placeholder="Nome da Instituição:" value="<%=dadosColegio[0].Nome_Colegio%>" class="form-control">
+                                <label>Data de Fundação Complexo Escola</label><br>
+                                <input type="date" name="data_fundacao" class="form-control" value="<%=dadosColegio[0].data_fundacao%>">
+                        
+                                <select name="provincia" class="form-control"><br>
+                                        <option>Seleciona a provincia em que se encontra Complexo</option>
+                                        <option value="<%=dadosColegio[0].endereco.provincia%>Luanda"><%=dadosColegio[0].endereco.provincia%></option>
+                                        <option value="Benguela">Benguela</option>
+                                        <option value="Huila">Huila</option>
+                                        <option value="Moxico">Moxico</option>
+                                        <option value="Bié">Bié</option>
+                                        <option value="Huambo">Huila</option>
+                                </select><br>
+                                <label>Múniciopio</label>
+                                <input type="text" name="municipio" placeholder="Múniciopio:" class="municipio" value="<%=dadosColegio[0].endereco.municipio%>">
+                                <label>Bairro</label>
+                                <input type="text" name="bairro" placeholder="Bairro" class="bairro" value="<%=dadosColegio[0].endereco.bairro%>">
+                                <label>Rua</label>
+                                <input type="text" name="rua" placeholder="Rua:" class="rua" value="<%=dadosColegio[0].endereco.rua%>">
+                                <label>Telefone do colegio</label>
+                                <input type="tel" name="casa" placeholder="Telefone DE casa" class="casa" value="<%=dadosColegio[0].contacto.contacto_colegio%>">
+                                <label>Movicel</label>
+                                <input type="tel" name="movicel" placeholder="244-992-735-537"  class="movicel" value="<%=dadosColegio[0].contacto.contacto_movicel%>">
+                                <label>Unitel</label>
+                                <input type="tel" name="unitel" placeholder=" 244-923-735-537" class="unitel" value="<%=dadosColegio[0].contacto.contacto_unitel%>" required>
+                                <button type="submit" class="btn btn-primary" id="btn_terminar">Salvar</button>
+                        </form>
+                       <% } else { %> 
+                           
+                        <% } %>                  
+                <% } %> 
+                <button class="btn btn-primary" id="btn_terminar"><a href="/colegios/editColegio">Editar o seu perfil</a></button>
+
+         </div>
+
+        </div>
+         
+           
+        
+       

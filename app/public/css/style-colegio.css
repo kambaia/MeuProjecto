@@ -1,0 +1,539 @@
+            /******************parte da formatação dos corpo da parte do colegio ////////////////*/
+            
+            #Corpo-colegio {
+                display: flex;
+            }
+            
+            .usuario-bainner-direirto {
+                width: 23%;
+            }
+            
+            .usuario-bainner-direirto h5 {
+                padding: 5px;
+                color: #565D5D;
+                font-size: 1.1em;
+                text-align: center;
+            }
+            
+            .usuario-bainner-esquerdo {
+                width: 77%;
+                border-left: 1px solid #ccc;
+                margin-left: 2%;
+            }
+            
+            .roda_tabela {
+                background: #008dd1;
+                padding: 5px;
+            }
+            /************************************Formatação do painel direito////////////////////*/
+            
+            #foto_perfil {
+                border-bottom: 1px solid #ccc;
+                padding: 10px;
+                position: relative;
+                text-align: center;
+                border-left: 1px solid #ccc;
+            }
+            
+            #foto_perfil #boa-vidas-usuario {
+                font-size: 1.2em;
+            }
+            
+            .foto_perfil #boa-vidas {
+                padding: 5px;
+            }
+            
+            .foto_perfil img {
+                border-radius: 50%;
+            }
+            
+            .menu-dos-dados {
+                background: #0b63a3;
+                padding: 10px;
+                border-left: 1px solid #ccc;
+            }
+            
+            .menu-direito {
+                display: inline-block;
+                margin-left: 15px;
+            }
+            
+            #codigo-colegio {
+                color: #fff;
+                border-left: 1px solid #ccc;
+                background: #0D449E;
+                padding: 3px;
+                border-radius: 20px;
+            }
+            
+            .menu-direito #codigo-colegio img {
+                margin-bottom: 10px;
+                padding-left: 3px;
+                padding-right: 3px;
+            }
+            
+            .meu-dos-dados1 {
+                border-left: 1px solid #ccc;
+            }
+            
+            .Menu-sobre {
+                border-left: 1px solid #ccc;
+            }
+            
+            .Menu-sobre ul {
+                display: block;
+                border: 1px solid #fff;
+            }
+            
+            .Menu-sobre ul li {
+                border: 1px solid #ccc;
+                display: block;
+                padding-top: 5px;
+                padding-bottom: 15px;
+            }
+            
+            .Menu-sobre ul li a {
+                color: #111313;
+                margin-left: 10px;
+            }
+            
+            .Menu-sobre ul li span {
+                color: #565D5D;
+                margin-left: 10px;
+            }
+            /************************************Area lateral do painel///////////////*/
+            
+            .usuario-bainner-esquerdo .resumo-dados {
+                padding: 20px;
+            }
+            
+            .resumo-dados {
+                display: flex;
+                box-shadow: 1px 2px 5px #ccc;
+            }
+            
+            #home-page {
+                width: 4em;
+                padding: 4px;
+                background: #4e5051;
+                border-radius: 5px;
+                text-align: center;
+            }
+            
+            #discri-home-page {
+                width: 50%;
+                margin-left: 1%;
+            }
+            
+            #discri-home-page span {
+                font-size: 0.8em;
+                color: #4e5051;
+            }
+            
+            #discri-home-page h4 {
+                font-size: 1.2em;
+                color: #4e5051;
+            }
+            /*******************************painel principal para ver todos os dados registrados ****************/
+            
+            .resumo-de-tudo {
+                width: 100%;
+                background: #fff;
+                width: 98%;
+                margin: 0 auto;
+            }
+            
+            #descri-actualizacao-dado {
+                margin-top: 10px;
+                padding: 10px;
+                width: 100%;
+                text-align: center;
+                background: #f6f6f6;
+                color: #7e7f81;
+            }
+            
+            .visualizcao-dados-registrados {
+                width: 100%;
+                margin-top: 5px;
+                height: 390px;
+                background: #FFF;
+            }
+            
+            #visual-dados {
+                width: 100%;
+                height: 150px;
+                background: #f6f6f6;
+                display: flex;
+                padding-bottom: 10px;
+            }
+            /************formatação da convocatória **********/
+            
+            #convocatorias {
+                width: 30%;
+                margin-left: 2%;
+                background: url(/img/icon/message.png) no-repeat;
+                border-bottom: 2px solid #7c6307;
+                position: relative;
+            }
+            
+            #visual-dados #convocatorias #resultado {
+                position: absolute;
+                font-size: 1em;
+                right: 0;
+                top: 10px;
+            }
+            /************formatação do aluno **********/
+            
+            #visual-dados #aluno {
+                width: 30%;
+                margin-left: 2%;
+                background: #008dd1;
+                background: url(/img/icon/alunos.png) no-repeat;
+                position: relative;
+                border-bottom: 2px solid #044f0d;
+            }
+            
+            #visual-dados #aluno #resultado {
+                position: absolute;
+                font-size: 1em;
+                right: 0;
+                top: 10px;
+            }
+            /************formatação do pagamento **********/
+            
+            #pagamentos {
+                width: 30%;
+                margin-left: 2%;
+                background: url(/img/icon/receive.png) no-repeat;
+                position: relative;
+                border-bottom: 2px solid #16BFFD;
+            }
+            
+            #visual-dados #pagamentos #resultado {
+                position: absolute;
+                font-size: 1em;
+                right: 0px;
+                top: 10px;
+            }
+            
+            .tabela-dos-pagamento {
+                margin-top: 2%
+            }
+            /***********************FORMATAÇÃO DA TABELA DE PAGAMENTOS RECENTES******************/
+            
+            .table {
+                width: 100%;
+            }
+            
+            .topo_tab th {
+                border: 1px solid #ccc;
+                background: #0b63a3;
+                color: #e0e0e0;
+            }
+            /************************fim da formatação do painel principal................*/
+            
+            .content {
+                height: 560px;
+                display: flex;
+                z-index: 0;
+            }
+            
+            .content .saldo-disp {
+                width: 30%;
+                background: #ccc;
+                position: relative;
+                margin-left: 2%;
+                height: 550px;
+                z-index: 2;
+            }
+            /*////////////////////////////Deslogar//////////////////////////////////*/
+            
+            .content .cap_tabela {
+                text-align: center;
+                height: 180px;
+                border-bottom: 1px solid #008dd1;
+                z-index: 1;
+            }
+            
+            .foto_perfil {
+                position: relative;
+                height: 140px;
+                width: 140px;
+                left: 20%;
+                top: 5%;
+                border-radius: 50%;
+                z-index: 3;
+            }
+            /* -------------------------------configurações gerais do sistema----------------------*/
+            
+            .container-flue {
+                width: 100%;
+                height: 540px;
+                background-color: rgb(224, 224, 224)
+            }
+            
+            .navbar {
+                width: 100%;
+                color: #fff;
+                background-color: #e0e0e0;
+                height: 50px;
+                margin-top: 1px;
+                box-shadow: 5px 0px 10px rgb(86, 82, 82, 0.5);
+                border-top: 1px solid #423f3f;
+                z-index: 0;
+                display: flex;
+                margin-top: -20px;
+                justify-content: flex-end;
+            }
+            
+            #enviar-convoca {
+                width: 50%;
+                margin-left: 25%;
+            }
+            
+            #add-aluno {
+                width: 50%;
+                margin-left: 5%;
+            }
+            
+            .menu-li {
+                display: flex;
+                justify-content: center;
+                background-color: #008dd1;
+                margin-right: 8%;
+            }
+            
+            .container {
+                width: 100%;
+                height: 200px;
+                display: flex;
+                margin-top: 1%;
+            }
+            
+            .container .perfil-geral {
+                background-color: #fff;
+                width: 45%;
+                border: 1px solid #ccc;
+                height: 200px;
+                box-shadow: 5px 0px 10px rgb(86, 82, 82, 0.5);
+            }
+            
+            .container .perfil-endereco {
+                width: 55%;
+                border-top: 1px solid #ccc;
+                height: 200px;
+                margin-left: 8%;
+                background-color: #fff;
+            }
+            
+            .perfil-geral .foto {
+                background-color: #fff;
+                display: flex;
+                text-align: center;
+                padding: 4px;
+            }
+            
+            .perfil-geral .foto_per {
+                border-style: none;
+                width: 35%;
+            }
+            
+            .perfil-geral .foto_per img {
+                border-style: none;
+                border-radius: 50%;
+                margin-left: 5%;
+                border: 1px solid #008dd1;
+                box-shadow: 1px 0px 10px rgba(3, 3, 3, 0.5);
+            }
+            
+            .perfil-geral .foto_per {
+                font-size: 1.2em;
+                color: #008dd1;
+                ;
+                cursor: pointer;
+                margin-left: 2%;
+            }
+            
+            .sobre-col {
+                text-align: center;
+                margin-top: 2%;
+            }
+            
+            .sobre-col h4 {
+                font-size: 1.3em;
+                border-bottom: 1px solid #ccc;
+                padding: 4px;
+            }
+            
+            .edite {
+                text-align: center;
+                margin-right: 6%;
+            }
+            
+            .edite span a {
+                color: #008dd1;
+                font-size: 1.1em;
+            }
+            
+            .rodape {
+                width: 100%;
+                height: 50px;
+                background: #16BFFD;
+                /* fallback for old browsers */
+                background: -webkit-linear-gradient(to right, rgb(87, 141, 241), #16BFFD);
+                /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to right, rgb(3, 78, 128), rgba(8, 154, 207, 0.568));
+                /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                ;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+            
+            .card-body {
+                width: 90%;
+                height: 440px;
+                background: #fff;
+            }
+            
+            .card-body .form-control {
+                width: 100%;
+                margin: 1% auto;
+                margin-left: 2%;
+            }
+            
+            .rodape span {
+                margin-left: 4%;
+                margin-top: 2%;
+                color: #fff;
+                cursor: pointer;
+            }
+            
+            @media (max-width: 767px) {
+                .img_logo {}
+                .img_logo a {
+                    margin-left: -20px;
+                }
+                #Corpo-colegio {
+                    display: block;
+                    margin-top: 2%;
+                    z-index: 0;
+                    border: none;
+                }
+                .usuario-bainner-direirto {
+                    width: 100%;
+                }
+                .usuario-bainner-direirto h5 {
+                    padding: 5px;
+                    color: #565D5D;
+                    font-size: 1.1em;
+                    text-align: center;
+                }
+                .usuario-bainner-esquerdo {
+                    width: 100%;
+                    margin-left: 2%;
+                }
+                #foto_perfil {
+                    border-bottom: 1px solid #ccc;
+                    padding: 10px;
+                    position: relative;
+                    text-align: center;
+                    z-index: 1;
+                }
+                .usuario-bainner-direirto img#logo {
+                    z-index: 3;
+                    border: none;
+                    border-radius: 50%;
+                }
+                #convocatorias {
+                    width: 30%;
+                    margin-left: 2%;
+                    background: url(/img/icon/message.png) no-repeat;
+                    border-bottom: 2px solid #7c6307;
+                    position: relative;
+                }
+                #visual-dados #convocatorias #resultado {
+                    position: absolute;
+                    font-size: 0.8em;
+                    right: 0;
+                    top: 40%;
+                    padding: 20px;
+                }
+                #contagem {
+                    font-size: 1.5em;
+                    color: #0D449E;
+                }
+                /************formatação do aluno **********/
+                #visual-dados #aluno {
+                    width: 30%;
+                    margin-left: 2%;
+                    background: #008dd1;
+                    background: url(/img/icon/alunos.png) no-repeat;
+                    position: relative;
+                    border-bottom: 2px solid #044f0d;
+                }
+                #visual-dados #aluno #resultado {
+                    position: absolute;
+                    font-size: 1em;
+                    right: 0;
+                    top: 40%;
+                    padding: 20px;
+                    font-size: 0.8em;
+                }
+                /************formatação do pagamento **********/
+                #pagamentos {
+                    width: 30%;
+                    margin-left: 2%;
+                    background: url(/img/icon/receive.png) no-repeat;
+                    position: relative;
+                    border-bottom: 2px solid #16BFFD;
+                }
+                #visual-dados #pagamentos #resultado {
+                    position: absolute;
+                    font-size: 1em;
+                    right: 0px;
+                    top: 40%;
+                    padding: 20px;
+                    font-size: 0.8em;
+                }
+                #visual-dados #convocatorias #resultado h3 {
+                    font-size: 1.5em;
+                }
+                /*********************************************Formatação da definiçã**********************************/
+                .container-flue {
+                    height: 1000px;
+                }
+                .container {
+                    display: block;
+                }
+                .container .perfil-geral {
+                    background-color: #fff;
+                    width: 100%;
+                    border: 1px solid #ccc;
+                    height: 200px;
+                    box-shadow: 5px 0px 10px rgb(86, 82, 82, 0.5);
+                }
+                .container .perfil-endereco {
+                    width: 100%;
+                    border-top: 1px solid #ccc;
+                    height: 200px;
+                    margin-left: 0;
+                    margin-top: 50%;
+                    background-color: #fff;
+                }
+                /****************************************formatação do envio das convocatorias ******************/
+                .card {
+                    width: 98%;
+                    margin: auto;
+                }
+                #card-envio-convocatoria {
+                    width: 98%;
+                }
+                #card-envio-convocatoria .btn {
+                    width: 98%;
+                }
+                /********************************formatação dos dados do aluno *************************/
+                #alunos .btn {
+                    width: 45%;
+                }
+            }

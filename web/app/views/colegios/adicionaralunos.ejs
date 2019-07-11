@@ -1,0 +1,36 @@
+
+ 
+    <% include partials/head %>
+<div class="container">
+        <div class="card-body">     
+        <h2 class="card-title">Adicionar Alunos</h2>
+        <hr>
+                <form action="/colegios/addalunos" method="POST">
+                        <label>Nome Completo do Estudante</label >
+                        <input type="text" name="nome_Estudante" placeholder="Nome do Estudante:" class="form-control">
+                        <label>Data de nascimento</label>
+                        <input type="date" name="data_nascimento" class="form-control">
+                        <label>Seleciona o Genero</label>
+                        <select name="genero" class="form-control">
+                        <option>Masculino</option>
+                        <option>Femenino</option>  
+                        </select><br>
+                        <label>Curso</label>
+                        <input type="text" name="curso" placeholder="Curso:/ Ainda não" class="curso">
+                        <label>Nº de Estudante</label>
+                        <input type="text" name="numemeroEstudante" placeholder="Nº de Estudante:" class="numAluno">
+                        <label>Classe</label>
+                        <input type="text" name="classe" placeholder="Classe:" class="classe">
+                        <label>Turma</label>
+                        <input type="text" name="turma" placeholder="Turma:" class="turma">
+                        <label>Telefone de Casa</label>
+                        <input type="tel" name="Telefone_casa" placeholder="Telefone de Casa" class="casa">
+                        <label>Movicel</label>
+                        <input type="tel" name="movicel" placeholder="Telefone de Pai"  class="movicel">
+                        <label>Unitel</label>
+                        <input type="tel" name="unitel" placeholder="Telefone de Mãe" class="unitel">
+                        <button type="submit" class="btn btn-primary" id="btn_terminar">Salvar</button>
+                        </form>
+                </div>
+</div>
+    

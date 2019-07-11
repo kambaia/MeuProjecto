@@ -1,0 +1,170 @@
+#Painel-da-convocatoria {
+    width: 100%;
+    background: #cccccc;
+    height: 100%;
+}
+
+.navbar {
+    width: 100%;
+    color: #fff;
+    background-color: #e0e0e0;
+    height: 50px;
+    margin-top: 1px;
+    box-shadow: 5px 0px 10px rgb(86, 82, 82, 0.5);
+    border-top: 1px solid #423f3f;
+    z-index: 0;
+    display: flex;
+}
+
+.nav-bar {
+    width: 100%;
+    box-shadow: 5px 0px 10px rgb(86, 82, 82, 0.5);
+    padding: 10px;
+    padding-left: 10px;
+}
+
+.navbar h2.card-title {
+    padding: 10PX;
+    margin-left: 0%;
+    text-align: center;
+}
+
+.paineis-geral {
+    margin: 0 auto;
+    width: 98%;
+    background: #Fff;
+    margin-top: 5px;
+}
+
+#topo-convocatoria {
+    border-bottom: 1px solid #ccc;
+}
+
+.table {
+    padding: 10px;
+}
+
+#tabela-das-conv {
+    padding: 10px;
+    background: #Fff;
+    border-top-left-radius: 10px;
+}
+
+.table td {
+    border: 1px solid #ccc;
+}
+
+
+/************************Formatação do envio de convotatoria/////////////*/
+
+.card {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+}
+
+
+/**********************************formatação dos do painel de registros d alunos */
+
+#alunos {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 1px 1px 4px #423f3f;
+}
+
+#alunos .fotoperfil {
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.grupo-form {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.grupo-form .btn {
+    color: #fff;
+    width: 20%;
+}
+
+
+/************************formatação do acesso a carteira/////////////*/
+
+.paineis-geral-carteira {
+    width: 100%;
+    height: 505px;
+}
+
+#acesso-carteira {
+    width: 40%;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 1px 1px 4px #423f3f;
+}
+
+#acesso-carteira .btn {
+    margin-top: 2%;
+    width: 20%;
+}
+
+#grupo-daabertura-carteira input {
+    margin-top: 2%;
+}
+
+#acesso-carteira .imglload {
+    text-align: center;
+}
+
+#confirm-carteira {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 1px 1px 4px #423f3f;
+}
+
+.col-sm-12 {
+    text-align: center;
+}
+
+#grupo-daabertura-criada {
+    widows: 60px;
+}
+
+.bt_decisao {
+    text-align: center;
+    display: flex;
+}
+
+.bt_decisao .btn {
+    width: 100%;
+    margin-left: 100%;
+    color: #fff;
+    background: #0c89af;
+}
+
+
+/************************Editar os usuarios /////////*/
+
+#edite-bot {
+    margin-top: 10px;
+}
+
+#delete-bot {
+    margin-top: 10px;
+}
+
+@media (max-width: 767px) {
+    #acesso-carteira {
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+        box-shadow: 1px 1px 4px #423f3f;
+    }
+    #acesso-carteira .btn {
+        width: 80%;
+    }
+}

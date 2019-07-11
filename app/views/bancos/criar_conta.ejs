@@ -1,0 +1,48 @@
+<% include partials/head %>
+    <div class="container-fluid">
+        <div class="corpo">
+            <img src="/img/loger.gif">
+            <img src="/img/multicaixa.png" width="200p" class="img-fluid" alt="Responsive image">
+            <div class="criar-carteira">
+                <h2>Criar conta bancaria</h2>
+                <hr>
+                <form action="/bancos/criar_conta" method="post">
+
+                    <div class="col-sm-12">
+                        <div class="caixa-inputs">
+                            <div class="input_text"> </div>
+                            <label>Nome completo do Cliente</label>
+                            <input type="text" name="nome" placeholder="Nome do Cliente:" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="caixa-inputs">
+                            <div class="input_text"> </div>
+                            <label>Nº do BI ou NIF:</label>
+                            <input type="text" name="numeroIB" placeholder="Digite aqui o  número do BI Ou nº de NIF do Cliente:" class="form-control" required max="14" min="14">
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="caixa-inputs">
+                            <div class="input_text"> </div>
+                            <label>Email</label>
+                            <input type="email" name="email" placeholder="Entre com o email do cliente:" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12">
+                        <div class="caixa-inputs">
+                            <div class="input_text"> </div>
+                            <label>Valor Inicial</label>
+                            <input type="number" name="valor" placeholder="Digita o valor a pagar" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <button type="submit" class="btn btn-primary" id="btn_transferir">Criar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <% include partials/footer%>

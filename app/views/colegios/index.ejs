@@ -1,0 +1,151 @@
+<% include partials/head %>
+
+
+
+    <div class="container-fluid" id="Corpo-colegio">
+        <section class="usuario-bainner-direirto">
+            <div id="foto_perfil">
+                <div id="logo">
+                    <%if(dado_colegio.foto==="undefined") { %>
+                        <img id="logo" src="/uploads/img_colegios/logo.png" width="120">
+                        <% } else { %>
+                            <img src="/uploads/img_colegios/<%=dado_colegio.foto %>" width="100">
+                            <% } %>
+                                <div id="boa-vidas">
+                                    <span id="boa-vidas-usuario"><strong>Olá! <%=dado_colegio.nome%></strong><br> Seja Bem-Vindo/a! </span>
+                                    <br>
+
+                                </div>
+                </div>
+
+            </div>
+            <div class="menu-dos-dados ">
+                <div class="menu-direito ">
+                    <img src="/img/icon/home.png " width="30 ">
+                    <span id="codigo-colegio">CÓDIGO PIN: <img src="/img/icon/lock.png " width="22 "><%=dado_colegio.codigo%></span>
+                </div>
+            </div>
+            <div class="Menu-sobre ">
+                <ul>
+                    <li>
+                        <a href=" "> <img src="/img/icon/ulti-new.png " width="30 "><span> Tarefas</span></a>
+                    </li>
+                    <li>
+                        <a href="/colegios/alunos/informacao-conta">
+                            <img src="/img/icon/contact_card.png " width="30 "> <span> Informações da conta</span></a>
+                    </li>
+                    <li>
+                        <a href="/colegios/enviarconvocatoria"> <img src="/img/icon/enviar.png " width="30 "><span> Enviar convotario </span></a>
+                    </li>
+                    <li>
+                        <a href=" "> <img src="/img/icon/ulti-new.png " width="30 "><span>pagamento </span></a>
+                    </li>
+                    <li>
+                        <a href="/colegios/alunos/centro-ajuda"> <img src="/img/icon/help.png " width="30 "><span> Centro de ajuda</span></a>
+                    </li>
+                </ul>
+            </div>
+
+
+        </section>
+
+        <section class="usuario-bainner-esquerdo">
+            <div class="resumo-dados">
+                <div id="home-page">
+                    <img src="/img/icon/home_page.png " width="40 ">
+                </div>
+                <div id="discri-home-page">
+                    <span>Painel do colégio</span>
+
+                    <h4>Complexo Escolar: <strong><%=dado_colegio.colegio%></strong></h4>
+                </div>
+            </div>
+            <div class="resumo-de-tudo">
+                <div id="descri-actualizacao-dado">
+                    <span> Você pode ver e actualizar seus dados, Alunos, convocatórias , professor e todos pagamentos</span>
+                </div>
+                <div class="visualizcao-dados-registrados">
+                    <div id="visual-dados">
+                        <div id="convocatorias">
+                            <div id="resultado">
+                                <span>convocatórias envindas</span>
+
+
+                                <h3 id="contagem">
+                                    <%= JSON.stringify(informacao.length) %>
+                                </h3>
+                            </div>
+                        </div>
+
+                        <div id="aluno">
+                            <div id="resultado">
+                                <span>Alunos Cadastrados</span>
+
+                                <h3 id="contagem">
+                                    <%= JSON.stringify(al.length) %>
+                                </h3>
+                            </div>
+                        </div>
+
+                        <div id="pagamentos">
+                            <div id="resultado">
+                                <span>Todos Pagamentos</span>
+                                <h3 id="contagem">
+                                    <%= JSON.stringify(transferencias.length) %>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tabela-dos-pagamento">
+                        <div class="table-responsive">
+                            <table class="table  table-sm">
+                                <thead class="topo_tab ">
+
+
+                                    <tr>
+                                        <th scope="col ">Data</th>
+                                        <th scope="col ">Enviado por</th>
+                                        <th scope="col ">Estudante</th>
+                                        <th scope="col ">Valor</th>
+                                        <th scope="col ">Nº</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <% transferencias.forEach(function(trans, index){ %>
+                                        <tr>
+                                            <td>
+                                                <%-trans.Anoletivo.ano %>
+                                                    <%-trans.Anoletivo.mes %>
+                                                        <%-trans.Anoletivo.hora %>
+                                            </td>
+                                            <td>
+                                                <%-trans.nomeEncarregado %>
+                                            </td>
+                                            <td>
+                                                <%-trans.estudante %>
+                                            </td>
+                                            <td>
+                                                <%-trans.valortransferido %>
+                                            </td>
+                                            <td>
+                                                <%-trans.numerode_estudante %>
+                                            </td>
+                                            <% }) %>
+                                        </tr>
+                                </tbody>
+
+
+                            </table>
+                        </div>
+                        <div class="roda_tabela" id="roda_tabela">
+                            <a href="/colegios/pagamentos" class="btn_avancar ">Ver todos recentes</a>
+                        </div>
+                    </div>
+
+
+                </div>
+
+        </section>
+        </div>
+        <% include partials/footer%>

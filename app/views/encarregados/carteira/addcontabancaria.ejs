@@ -1,0 +1,57 @@
+<% include ./partials/head %>
+    <% include partials/nav %>
+
+        <h2>Adicionar o seu multi caixa</h2>
+        <hr>
+        <div class="card-body">
+            <div class="card">
+                <img src="/img/multicaixa.png" width="200p" class="img-fluid" alt="Responsive image">
+                <form action="" method="post" enctype="multipart/form-data">
+
+                    <div class="col-sm-12">
+                        <div class="caixa-inputs">
+                            <div class="input_text"> </div>
+                            <select name="banco" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                        <option>Seleciona o Banco</option>
+                                                            <option value="BMA">BANCO MILLENIO ATLANTICO</option>
+                                                            <option value="BFA">BFA</option>
+                                                            <option value="BNI">BNI</option>
+                                                            <option value="BAI">BAI</option>
+                                                            <option value="BCA">BCA</option>
+                                                            <option value="B_SOL">BANCO SOL</option>
+                                                        </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="caixa-inputs">
+                            <div class="input_text"> </div>
+                            <label></label>
+                            <input type="email" name="email" placeholder="Confirma o seu email" class="form-control" required>
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-12">
+                        <div class="caixa-inputs">
+                            <div class="input_text"> </div>
+                            <label></label>
+                            <input type="text" name="numeroBI" placeholder="Confirma o seu BI:" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="caixa-inputs">
+                            <div class="input_text"> </div>
+                            <label></label>
+                            <input type="text" name="numeroConta" placeholder="Confirma o seu número de conta do seu banco:" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12">
+                        <button type="submit" class="btn btn-primary" id="btn_transferir">Confirmar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <% include partials/footer%>

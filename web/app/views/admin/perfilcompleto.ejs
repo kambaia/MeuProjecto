@@ -1,0 +1,58 @@
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.css">
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/form_usuario.css">
+    
+   
+       <div class="card caixa-1">
+            <h2>Editando o perfil do usuario</h2>
+            <hr>
+            <div class="card-body">
+            <form action="/admin/usuarios" method="POST">
+                
+                <label>Seleciona uma foto de perfil</label >
+                <input type="file" class="form-control">
+                <label>Seleciona o usúario na qual será editado os dados:</label>
+
+                <select name="usuario" class="custom-select">
+                   
+                       
+                    </select>
+                <label>Data de nascimento</label>
+                <input type="date" name="data_nascimento" class="form-control">
+                <label>Altura</label>
+                <input type="number" name="altura" class="casa">
+                <select name="genero" class="custom-select">
+                    <option>Seleciona o sexo</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                </select>
+                <select name="provincia" class="custom-select">
+                        <option>Seleciona a sua provincia</option>
+                        <option value="Luanda">Luanda</option>
+                        <option value="Benguela">Benguela</option>
+                        <option value="Huila">Huila</option>
+                        <option value="Moxico">Moxico</option>
+                        <option value="Bié">Bié</option>
+                        <option value="Huambo">Huila</option>
+                    </select>
+                <label>Múniciopio</label>
+                <input type="text" name="municipio" placeholder="Múniciopio:" class="municipio">
+                <label>Bairro</label>
+                <input type="text" name="bairro" placeholder="Bairro" class="bairro">
+                <label>Rua</label>
+                <input type="text" name="rua" placeholder="Rua:" class="rua">
+                <label>Telefone de casa</label>
+                <input type="tel" name="casa" placeholder="Telefone DE casa" class="casa">
+                <label>Movicel</label>
+                <input type="tel" name="movicel" placeholder="244-992-735-537"  class="movicel">
+                <label>Unitel</label>
+                <input type="tel" name="unitel" placeholder=" 244-923-735-537" class="unitel">
+               <button type="submit" class="btn btn-primary">Salvar</button>
+            </form>
+      
+            </div>
+       </div>

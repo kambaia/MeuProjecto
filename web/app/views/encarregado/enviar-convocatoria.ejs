@@ -1,0 +1,36 @@
+
+ 
+    <% include partials/head %>
+         
+            <div class="card-body">
+            
+              
+                    <div class="modal-card">
+                            <form action="/colegios/perfilcolegio" method="POST">
+                                
+                                <div class="topo">
+                                        <h2>Enviar convocatoria</h2>
+                                        <hr>
+                                </div>
+                              
+                                        <label>Assunto</label ><br>
+                                    
+                                            <input type="text" name="Nome_Colegio" placeholder="Nome da Instituição:" class="form-control">
+                                        
+                                        <label>Data do comunicado</label><br>
+                                        <input type="date" name="data_fundacao" class="form-control">
+                                        <label>Seleciona o encarregado</label><br>
+                                        <select name="provincia" class="form-control"><br>
+                                                <option>Nenhum encarregado disponível</option>
+                                                
+                                            </select><br>
+                                        <label>Mensagem</label>
+                                        <textarea class="form-control"></textarea>
+                                       
+                                    <button type="submit" class="btn btn-primary" id="btn_terminar">Salvar</button>
+                            </form>
+                        </div>
+                        
+                </div>
+        
+       

@@ -1,0 +1,99 @@
+<% include partials/head %>
+    <% include partials/nav %>
+        <div class="pagamentos">
+            <form class="">
+
+                <div class="filtro-pagamento">
+                    <select class="custom-select" name="ciclo">
+                                            <option selected>Meses</option>	
+                                            <% for(var i=0; i<pagamento.length; i++) { %>
+                                            <option value="<%=pagamento[i].Anoletivo.mes %>"><%=pagamento[i].Anoletivo.mes %></option>
+                                            <% } %>
+                </select>
+
+                    <select class="custom-select" name="curso">
+                         <option selected>Ano Letivo...</option>
+                         <% for(var i=0; i<pagamento.length; i++) { %>
+                                <option value="<%=pagamento[i].Anoletivo.ano %>"><%=pagamento[i].Anoletivo.ano %></option>
+                                <% } %>
+                                    
+                </select>
+                    <select class="custom-select mr" name="classe">
+                        <option selected>Classe....</option>
+                        <% for(var i=0; i<pagamento.length; i++) { %>
+                                <option value="<%=pagamento[i].classe %>"><%=pagamento[i].classe %></option>
+                                <% } %>
+                 </select>
+                    <div class="btn-pesquisar">
+                        <a href="javascript://"><button class="btn btn-info" id="btn_buscar" type="submit">Buscar</button></a>
+                    </div>
+                </div>
+            </form>
+
+            <div class="table-responsive">
+                <table>
+                    <tr>
+                        <thead>
+                            <tr>
+                                <th scope="col">Data</th>
+                                <th scope="col">Foto</th>
+                                <th scope="col">Encarregado</th>
+                                <th scope="col">Estudante</th>
+                                <th scope="col">Classe</th>
+                                <th scope="col">Colégio</th>
+                                <th scope="col">Valor PG</th>
+                                <th scope="col">Qtd de meses</th>
+                                <th>Meses PG</th>
+                                <th>Semana</th>
+                                <th>Ano</th>
+                            </tr>
+                        </thead>
+                    </tr>
+                    <tbody>
+                        <% for(var i=0; i<pagamento.length; i++) { %>
+                            <tr>
+                                <% if(pagamento.length != []) { %>
+
+                                    <td>
+                                        <%=pagamento[i].data %>
+                                            <%=pagamento[i].Anoletivo.hora %>
+                                    </td>
+                                    <td><img src="/uploads/alunos/<%=pagamento[i].foto%>" width="50"></td>
+                                    <td class="enc">
+                                        <%=pagamento[i].nomeEncarregado %>
+                                    </td>
+                                    <td>
+                                        <%=pagamento[i].estudante %>
+                                    </td>
+                                    <td>
+                                        <%=pagamento[i].classe%>
+                                    </td>
+
+                                    <td>
+                                        <%=pagamento[i].colegio%>
+                                    </td>
+                                    <td>
+                                        <%=pagamento[i].valortransferido%> Kz</td>
+                                    <td>
+                                        <%=pagamento[i].numerodemeses%>
+                                    </td>
+
+                                    <td>
+                                        <%=pagamento[i].mese %>
+                                    </td>
+                                    <td>
+                                        <%=pagamento[i].diaSemana%>
+                                    </td>
+                                    <td>
+                                        <%=pagamento[i].Anoletivo.ano %>
+                                    </td>
+
+                            </tr>
+                            <% }  else { %>
+                                Nenhum pagamento Feito
+                                <% } %>
+                                    <% } %>
+                    </tbody>
+                </table>
+            </div>
+        </div>

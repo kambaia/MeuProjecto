@@ -1,0 +1,36 @@
+
+
+<% include partials/head %>
+
+         <div class="content">
+                
+                             <div class="todas_convocatorias">
+                                   <table class="table table-striped table-bordered">
+                                    <thead class="topo_tab">
+                                        <tr>
+                                        <th scope="col">Data</th>
+                                        <th scope="col">Enviado por</th>
+                                        <th scope="col">Assunto</th>
+                                        <th scope="col">Comunicado</th>
+                                        <th scope="col">colégio</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                       <% for(var i=0; i<convocatoria.length; i++){ %>
+                                        <% if (convocatoria.length >0) {%>
+                                            <tr>
+                                                <th><%=convocatoria[i].Comunicado.data_convocatoria%></th>
+                                                <th><%=convocatoria[i].usuarioLogin %></th>
+                                                <th><%=convocatoria[i].Comunicado.Assunto_convocatoria %></th>
+                                                <th><%=convocatoria[i].Comunicado.mesagem_convocatoria %></th>
+                                                <th><%=convocatoria[i].Colegio %></th>
+                                            </tr>
+                                            <% } else{ %>
+                                           <h5>Nenhum dados encontrado</h5>
+                                        <% } %>
+                                       </tbody>
+                                       <% } %>
+                                   </table>
+                        </div>
+            </div>
+<% include partials/footer%>

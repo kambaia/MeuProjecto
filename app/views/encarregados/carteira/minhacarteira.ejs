@@ -1,0 +1,110 @@
+<% include partials/head %>
+    <% include partials/nav %>
+
+
+        <div class="pagina-pagamento">
+            <section class="trasnsferenca-rec">
+                <div class="cap_tabela">
+                    <h3>Transições recentes</h3>
+                </div>
+
+                <table class="table table-striped table-bordered">
+                    <thead class="topo_tab">
+                        <tr class="top-tabela">
+                            <th scope="col">Data</th>
+                            <th scope="col">hora</th>
+                            <th scope="col">Foto</th>
+                            <th scope="col">estudante</th>
+                            <th scope="col">colégio</th>
+                            <th scope="col">valor</th>
+                            <th scope="col">Meses pago</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% for(var i=0; i<pagamento.length; i++) { %>
+                            <tr>
+                                <% if(pagamento.length != []) { %>
+                                    <% 
+                                                var dt = new Date();
+                                                 var meses = new Array('Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Desembro'); 
+                                                 
+                                                 %>
+                                        <% if (pagamento[i].Anoletivo.mes == meses[dt.getMonth()]) {
+                                                    console.log('Foram mais de')
+                                                     console.log(pagamento.length) %>
+
+                                            <td>
+                                                <%=pagamento[i].data %>
+                                            </td>
+                                            <td>
+
+                                                <%=pagamento[i].Anoletivo.hora %>
+
+                                            </td>
+                                            <td><img src="/uploads/alunos/<%=pagamento[i].foto%>" width="50"></td>
+
+                                            <td>
+                                                <%=pagamento[i].estudante %>
+                                            </td>
+
+
+                                            <td>
+                                                <%=pagamento[i].colegio%>
+                                            </td>
+                                            <td>
+                                                <%=pagamento[i].valortransferido%> Kz
+                                            </td>
+
+                                            <td>
+                                                <%=pagamento[i].mese %>
+                                            </td>
+
+
+                                            <% }%>
+                            </tr>
+                            <% }  else { %>
+                                Nenhum pagamento Feito
+                                <% } %>
+                                    <% } %>
+                    </tbody>
+                </table>
+                <div class="roda_tabela">
+                    <a href="/encarregados/carteira/verpagamentos" class="btn_avancar">Ver todas</a>
+                </div>
+            </section>
+            <section class="saldo-disp">
+                <div class="cap_tabela">
+                    <h3 class="saldo">Saldo </h3>
+                    <button id="Add-pay">
+                        <a href="/encarregados/carteira/addmulticaixa"><img src="/img/icon/add_64px.png" width="40"> Conta Bancaria</a>
+                    </button>
+                </div>
+                <div class="saldo_cliente">
+                    <div id="waller">
+                        <div class="carteira">
+                            <img src="/img/icon/wallet.png" width="40">
+                        </div>
+                        <div class="valor">
+                            <span>Valor disponivel em Lobogo</span>
+                            <h4>0.00034412 KC</h4>
+                        </div>
+                    </div>
+                    <div class="valorka" id="waller">
+                        <div class="valor">
+                            <span>Equivalente a:</span>
+                            <h4> AOA
+                                <%=saldo%> kz</h4>
+                        </div>
+                    </div>
+
+                    <div class="btn_nav">
+                        <button class="btn" id="pay">
+                        <a href="/encarregados/carteira/pagar"><img src="/img/icon/card.png" width="50"><br>Fazer Pagamento</a>
+                        </button>
+                    </div>
+
+            </section>
+            </div>
+
+
+            <% include partials/footer %>

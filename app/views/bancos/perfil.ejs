@@ -1,0 +1,81 @@
+<% include partials/head %>
+
+    <div class="container-fluid">
+        <div class="corpo">
+
+            <div class="card-body">
+                <div class="card">
+                    <div class="card-header">
+                        <form action="/colegios/perfilcolegio" method="POST">
+                            <div class="col-sm-12">
+                                <div class="caixa-inputs">
+                                    <div class="input_text"> </div>
+                                    <label>Nome completo do Cliente</label>
+                                    <input type="text" name="nome" placeholder="Nome do Cliente:" class="form-control" value="<%=nome %>" required>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-12">
+                                <div class="caixa-inputs">
+                                    <div class="input_text"> </div>
+                                    <label>Nº do BI ou NIF:</label>
+                                    <input type="text" name="numeroIB" placeholder="Digite aqui o  número do BI Ou nº de NIF do Cliente:" value="<%=nif  %> " class="form-control" required max="14" min="14">
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="caixa-inputs">
+                                    <div class="input_text"> </div>
+                                    <label>Email</label>
+                                    <input type="email" name="email" placeholder="Entre com o email do cliente:" class="form-control" value="<%= email  %> " required>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-12">
+                                <div class="caixa-inputs">
+                                    <div class="input_text"> </div>
+                                    <label>Múniciopio</label>
+                                    <input type="text" name="municipio" placeholder="Múniciopio:" class="form-control" value="<%=endere %>">
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="col-sm-12">
+                                <div class="caixa-inputs">
+                                    <div class="input_text"> </div>
+                                    <label>Bairro</label>
+                                    <input type="text" name="bairro" placeholder="Bairro" class="form-control" value="<%=cidade%>">
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="caixa-inputs">
+                                    <div class="input_text"> </div>
+                                    <label>Rua</label>
+                                    <input type="text" name="rua" placeholder="Rua:" class="form-control" value="<%=rua%>">
+                                </div>
+                            </div>
+
+                            <div class="col-sm-12">
+                                <div class="caixa-inputs">
+                                    <div class="input_text"> </div>
+                                    <label>Telefone </label>
+                                    <input type="tel" name="casa" placeholder="Telefone DE casa" class="form-control" value="<%=cont1 %>">
+                                </div>
+                            </div>
+
+                            <div class="col-sm-12">
+                                <div class="caixa-inputs">
+                                    <div class="input_text"> </div>
+                                    <label>Unitel</label>
+                                    <input type="tel" name="unitel" placeholder=" 244-923-735-537" class="form-control" value=" <%=cont2 %>" required>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" id="btn_terminar">Salvar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <% include partials/footer %>

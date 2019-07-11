@@ -1,0 +1,187 @@
+body {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Bitstream Vera Sans", sans-serif;
+    color: #eaeeef;
+    margin: 0;
+    background: url(../img/background-azul.gif);
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.menu {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    height: 90px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.menu .menus {
+    width: 60%;
+    margin-left: 25%;
+}
+
+.menu .logo {
+    margin-left: 5%;
+    background: rgba(1, 40, 83, 0.5);
+    box-shadow: 0px 0px 20px rgba(4, 13, 133, 0.5);
+}
+
+.menu .logo img {
+    border-radius: 10px;
+    width: 120px;
+    margin-top: 8%;
+}
+
+.menu .menus li {
+    display: block;
+}
+
+.menu a {
+    float: left;
+    margin-left: 4%;
+    margin-top: 5%;
+    color: #fff;
+    font-size: 20px;
+}
+
+.container-flue {
+    margin: 1% auto;
+    display: flex;
+    position: relative;
+    background: rgba(134, 114, 114, 0);
+}
+
+.container-flue #primeiro-conteudo {
+    display: flex;
+    background: #005483;
+    justify-content: center;
+    padding: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.banner-escolha-cadastro {
+    width: 600px;
+}
+
+.descricao-cadsatro {
+    margin-left: 10px;
+}
+
+.inicio-decadstro {
+    margin-left: 80px;
+}
+
+.container-flue .desc-img {
+    padding: 4%;
+    color: #fff;
+    text-align: center;
+}
+
+.desc-img .btn {
+    width: 33%;
+    margin: 2% 5%;
+    padding: 2px;
+    border-radius: 10px;
+}
+
+.desc-img .btn a {
+    color: #fff;
+}
+
+.container-flue .banner {
+    position: relative;
+    width: 45%;
+    margin-left: 8%;
+}
+
+.container-flue .encar {
+    position: relative;
+    margin-top: 5%;
+}
+
+.container-flue .banner p {
+    color: #fff;
+}
+
+.container-flue .banner .irLogin {
+    position: absolute;
+    color: #fff;
+}
+
+.container-flue .banner label {
+    color: rgb(221, 221, 221);
+    font-size: 25px;
+}
+
+.container-flue .banner .btn {
+    color: #fff;
+    background: #000;
+}
+
+.container-flue .banner .btn:hover {
+    color: #fff;
+    background: rgb(18, 91, 133);
+}
+
+
+/*-------------------------------------------Responsivo ---------------------------------------------------*/
+
+@media(max-width:580px) {
+    .container-flue {
+        margin: 2% auto;
+        display: block;
+        position: relative;
+    }
+    .container-flue .descrecao-pco {
+        width: 100%;
+    }
+    .container-flue .banner {
+        position: relative;
+        width: 100%;
+    }
+    .menu .logo img {
+        width: 100%;
+        width: 120px;
+        margin-top: 8%;
+    }
+    .container-flue .desc-img img {
+        width: 100%;
+    }
+    .menu .menus {
+        width: 100%;
+        position: absolute;
+    }
+    .wrap_content_signup .button_signup {}
+}
+
+@media(mix-width:480px) {
+    .container-flue {
+        margin: 2% auto;
+        display: block;
+        position: relative;
+    }
+    .container-flue .descrecao-pco {
+        width: 100%;
+    }
+    .container-flue .banner {
+        position: relative;
+        width: 100%;
+    }
+    .menu .logo img {
+        width: 100%;
+        width: 120px;
+        margin-top: 8%;
+    }
+    .container-flue .desc-img img {
+        width: 100%;
+    }
+    .menu .menus {
+        width: 100%;
+        position: absolute;
+    }
+    .wrap_content_signup .button_signup {}
+}

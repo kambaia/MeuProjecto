@@ -1,0 +1,503 @@
+                body {
+                    font-family: "Lucida Grande", "Lucida Sans Unicode", "Bitstream Vera Sans", sans-serif;
+                    color: #eaeeef;
+                    margin: 0;
+                }
+                
+                .container-fluid {
+                    background: #005483;
+                    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8), rgba(9, 17, 22, 0.8);
+                }
+                
+                .corpo-principap-site {
+                    margin-top: 0px;
+                }
+                /* banner de boas vindas */
+                
+                .cabecalho .logo {
+                    width: 100%;
+                    height: 90px;
+                    display: flex;
+                    border-bottom: 1px solid #ccc;
+                }
+                
+                div#discri {
+                    text-align: center;
+                    width: 102%;
+                    height: 100%;
+                    position: absolute;
+                    z-index: 2;
+                    background-image: linear-gradient(-90deg, rgba(0, 0, 0, 0.8), rgba(9, 17, 22, 0.8));
+                }
+                
+                div#discri h2 {
+                    color: #fff;
+                    font-size: 2.5em;
+                    text-transform: uppercase;
+                    top: 30%;
+                    left: 14%;
+                    text-shadow: 2px 2px 0px rgba(2, 30, 73, 0.2);
+                    width: 70%;
+                    position: absolute;
+                }
+                
+                .descricao-titulo {
+                    text-align: center;
+                    width: 70%;
+                    top: 50%;
+                    left: 14%;
+                    position: absolute;
+                }
+                
+                .botoes-acesso {
+                    text-align: center;
+                    width: 70%;
+                    top: 60%;
+                    left: 14%;
+                    position: absolute;
+                }
+                
+                div#discri span {
+                    font-size: 1.2em;
+                    line-height: 1.3em;
+                    font-weight: 400;
+                    color: #fff;
+                }
+                
+                div#discri .btn {
+                    padding: 8px;
+                    margin-top: 4%;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    color: #fff;
+                    border-style: none;
+                    width: 20%;
+                }
+                
+                div#discri .btn:hover {
+                    background-color: rgba(0, 0, 0, 0.3);
+                    background: #1e8bce;
+                    translate: 2;
+                    opacity: 1;
+                }
+                
+                .cabecalho .logo .logo-img {
+                    width: 30%;
+                    margin-left: 3%;
+                }
+                
+                .cabecalho .logo .sub-menu {
+                    width: 50%;
+                    position: relative;
+                    left: 0px;
+                    text-align: center;
+                }
+                
+                .cabecalho .logo .botao {
+                    width: 20%;
+                    top: 20px;
+                    left: 35%;
+                    position: absolute;
+                    background: rgba(0, 0, 0, 0.0);
+                    color: #fff;
+                    font-size: 1.2em;
+                    border: none;
+                }
+                
+                .carousel-item img {
+                    border-radius: 5px;
+                }
+                
+                .cabecalho .logo .btn:hover {
+                    border: none;
+                    border-style: none;
+                }
+                
+                .cabecalho .logo .btn img {
+                    margin-left: 12px;
+                    color: #fff;
+                }
+                
+                .conteudo-servicos {
+                    display: flex;
+                    background: #005483;
+                    justify-content: center;
+                    padding: 10px;
+                }
+                
+                .conteudo-servicos .pagamento {
+                    width: 300px;
+                    background-repeat: no-repeat;
+                    display: block;
+                }
+                
+                .conteudo-servicos a {
+                    color: #fff;
+                    float: right;
+                }
+                
+                .conteudo-servicos a:hover {
+                    color: #1baae1;
+                    text-decoration: none;
+                }
+                
+                .conteudo-servicos img {
+                    color: #fff;
+                    float: left;
+                }
+                
+                .conteudo-servicos .servico-pc {
+                    color: #fff;
+                    margin-left: 2px;
+                    width: 330px;
+                    margin-left: 2%;
+                }
+                
+                .conteudo-servicos .smartphone {
+                    color: #fff;
+                    margin-left: 2px;
+                    width: 300px;
+                    margin-left: 5%;
+                }
+                
+                .conteudo-servicos .anucie {
+                    color: #fff;
+                    margin-left: 2px;
+                    width: 300px;
+                    margin-left: 5%;
+                }
+                
+                .primeiro-conteudo {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: space-between;
+                    border: 1px solid #ccc;
+                    padding: 10px;
+                }
+                
+                .conteudo {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: space-between;
+                    border: 1px solid #ccc;
+                    padding: 10px;
+                }
+                
+                .item {
+                    width: 430px;
+                    height: 460px;
+                    padding: 10px;
+                    margin-left: 10px;
+                    margin-top: 10px;
+                    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+                    text-align: center;
+                }
+                
+                .item img {
+                    box-shadow: 1px 1px 2px #fff;
+                }
+                
+                .desc {
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                }
+                
+                .desc .btn {
+                    margin-top: 2%;
+                    background: #005483;
+                    color: #fff;
+                }
+                
+                .desc .btn a {
+                    color: #fff;
+                }
+                
+                .desc .btn:hover {
+                    background: #1baae1;
+                    border-style: none;
+                }
+                
+                .layat-encarregado {
+                    width: 600px;
+                    height: 500px;
+                }
+                
+                .layat-encarregado .figure1 span {
+                    font-size: 1.4em;
+                    color: rgb(66, 63, 62)
+                }
+                
+                .layat-colegio {
+                    width: 600px;
+                    height: 500px;
+                }
+                
+                .layat-colegio .figure1 span {
+                    font-size: 1.3em;
+                    color: rgb(66, 63, 62)
+                }
+                
+                .bloco2 {
+                    display: flex;
+                    -webkit-align-items: center;
+                    align-items: center;
+                    -webkit-justify-content: center;
+                    justify-content: center;
+                    margin-left: 3%;
+                    box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.2);
+                    margin-top: 2%;
+                    padding: 10px;
+                }
+                
+                .figure2 {
+                    width: 50%;
+                    margin-left: 0% 3%;
+                    text-align: center;
+                }
+                
+                .figure1 {
+                    width: 50%;
+                    margin-left: 0% 3%;
+                    text-align: center;
+                    border-radius: 10px;
+                }
+                /* Primeir segundo*/
+                
+                .figure2 {
+                    width: 50%;
+                    margin-left: 0% 3%;
+                    text-align: center;
+                }
+                
+                .figure1 {
+                    width: 50%;
+                    margin-left: 0% 3%;
+                    text-align: center;
+                }
+                
+                .bloco2 .discao-jovem {
+                    width: 100%;
+                    text-align: center;
+                    position: relative;
+                }
+                
+                .bloco2 .discao-jovem img {
+                    width: 100%;
+                }
+                
+                .bloco2 .discao-jovem h2 {
+                    position: absolute;
+                    top: 30%;
+                    left: 8%;
+                    font-size: 3em;
+                    text-align: center;
+                    width: 82%;
+                }
+                
+                .testo-discri {
+                    text-align: center;
+                    width: 100%;
+                    position: absolute;
+                    color: #eaeeef;
+                    background: rgba(0, 0, 0, 0.5);
+                    height: 100%;
+                }
+                
+                .testo-discri:hover {
+                    width: 100%;
+                    position: absolute;
+                    color: #eaeeef;
+                    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(29, 41, 63, 0.5));
+                    height: 100%;
+                }
+                /************************Ajuda ********************************/
+                
+                .hide {
+                    display: none;
+                    color: #005483;
+                }
+                
+                #s1,
+                #s2,
+                #s3,
+                #s4,
+                #s5,
+                #s6,
+                #s8,
+                #s9 {
+                    color: #16380a;
+                }
+                
+                @media screen and (max-width: 600px) {
+                    .nav ul li {
+                        display: block;
+                        float: none;
+                    }
+                    .banner {
+                        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/backgraund.jpg);
+                        height: 100vh;
+                        background-position: center center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-attachment: fixed;
+                    }
+                    .cabecalho .logo {
+                        height: 90px;
+                        display: flex;
+                        border-bottom: 1px solid #ccc;
+                    }
+                    div#discri {
+                        text-align: center;
+                        width: 140%;
+                        height: 100%;
+                        position: absolute;
+                        left: 0.1%;
+                        background-image: linear-gradient(-90deg, rgba(15, 15, 15, 0.5), rgba(24, 56, 75, 0.5));
+                    }
+                    div#discri h2 {
+                        color: #fff;
+                        font-size: 1.5em;
+                        text-transform: uppercase;
+                        text-shadow: 2px 2px 0px rgba(2, 30, 73, 0.2);
+                        width: 100%;
+                        position: absolute;
+                        left: -2%;
+                    }
+                    #discri span {
+                        display: none;
+                    }
+                    #discri #btn-mais {
+                        background-color: #005483;
+                        width: 70%;
+                        display: none;
+                    }
+                    #redes {
+                        display: none;
+                    }
+                    .bloco1 {
+                        display: block;
+                    }
+                    .figure2 {
+                        width: 100%;
+                        margin-left: 0% 3%;
+                        text-align: center;
+                    }
+                    .figure1 {
+                        width: 100%;
+                        margin-left: 0% 3%;
+                        text-align: center;
+                    }
+                    .bloco2 {
+                        display: block;
+                    }
+                    .section1 {
+                        box-shadow: 0px 0px 2px #ccc;
+                        text-align: center;
+                        border-radius: 10px;
+                        width: 100%;
+                        margin-left: 3%;
+                        padding: 25px;
+                    }
+                    .section2 {
+                        box-shadow: 0px 0px 2px #ccc;
+                        text-align: center;
+                        border-radius: 10px;
+                        width: 100%;
+                        margin-left: 3%;
+                        padding: 10px;
+                    }
+                    .section3 {
+                        box-shadow: 0px 0px 2px #ccc;
+                        text-align: center;
+                        border-radius: 10px;
+                        width: 100%;
+                        margin-left: 3%;
+                        padding: 25px;
+                    }
+                    .testo-discri {
+                        text-align: center;
+                        width: 100%;
+                        position: absolute;
+                        color: #eaeeef;
+                        background: rgba(0, 0, 0, 0.5);
+                        height: 100%;
+                    }
+                    .bloco2 .discao-jovem h2 {
+                        position: absolute;
+                        top: 10%;
+                        font-size: 1.5em;
+                        text-align: center;
+                        width: 82%;
+                    }
+                    /*sobre nós */
+                    .foto-servico img {
+                        width: 100%;
+                        box-shadow: 0px 0px 10px;
+                    }
+                    .descricao-servico {
+                        width: 100%;
+                    }
+                    .descricao-servico span {
+                        color: #131311;
+                        font-size: 1em;
+                        box-sizing: border-box;
+                    }
+                    .conteudo-servicos {
+                        display: flex;
+                        background: #005483;
+                        justify-content: center;
+                        padding: 10px;
+                        flex-wrap: wrap;
+                        align-items: center;
+                    }
+                    /*serviçõs responsivo*/
+                    .conteudo-servicos .pagamento {
+                        color: #fff;
+                        margin-left: 2px;
+                        width: 330px;
+                        margin-left: 2%;
+                        width: 500px;
+                    }
+                    .conteudo-servicos a {
+                        color: #fff;
+                        float: left;
+                        margin-left: 30px;
+                        text-decoration: none;
+                    }
+                    .conteudo-servicos a:hover {
+                        color: #1baae1;
+                        float: left;
+                        margin-left: 30px;
+                        text-decoration: none;
+                    }
+                    .conteudo-servicos img {
+                        color: #fff;
+                        float: left;
+                        margin-left: 20px;
+                    }
+                    .conteudo-servicos .servico-pc {
+                        color: #fff;
+                        margin-left: 2px;
+                        width: 330px;
+                        margin-left: 2%;
+                        width: 500px;
+                        margin-top: 10px;
+                    }
+                    .conteudo-servicos .smartphone {
+                        color: #fff;
+                        margin-left: 2px;
+                        width: 330px;
+                        margin-left: 2%;
+                        width: 500px;
+                        margin-top: 10px;
+                    }
+                    .conteudo-servicos .anucie {
+                        color: #fff;
+                        margin-left: 2px;
+                        width: 330px;
+                        margin-left: 2%;
+                        width: 500px;
+                        margin-top: 10px;
+                    }
+                }

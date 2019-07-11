@@ -1,0 +1,377 @@
+.container-fluid {
+    background: #fff;
+}
+
+
+/*-------------------edição do painel da carteira-------------------------*/
+
+.caixa-form {
+    width: 100%;
+    padding: 20px;
+}
+
+.caixa-form nav {
+    display: flex;
+    width: 100%;
+    padding: 8px;
+    height: 80px;
+    border-bottom: 2px solid #008ed2;
+    position: relative;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.caixa-form nav .btn_nav {
+    margin-left: 20%;
+    margin-top: 1.5%;
+    padding: 6px;
+    width: 60%;
+    display: inline-block;
+}
+
+.caixa-form nav .btn {
+    margin-left: 5%;
+    width: 30%;
+    background: #008ed2;
+    color: #ffffff;
+    padding: 4px;
+}
+
+.caixa-form .btn_voltar {
+    width: 10%;
+    background: #008ed2;
+    color: #ffffff;
+    border-style: none;
+    padding: 9px;
+    border-radius: 2px;
+}
+
+.caixa-form .btn_voltar:hover {
+    color: #ffffff;
+    background: #053e59;
+    border-bottom: 2px solid #000;
+}
+
+.caixa-form .btn_voltar a {
+    font-size: 17px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.caixa-form nav .btn:hover {
+    color: #ffffff;
+    background: #053e59;
+    border-bottom: 2px solid #000;
+}
+
+.caixa-form nav .btn a {
+    color: #ffffff;
+    border-style: none;
+    text-decoration: none;
+    border: none;
+    font-size: 18px;
+}
+
+.caixa-form nav .btn-sair {
+    border-style: none;
+    text-decoration: none;
+    border: none;
+    padding: 3px;
+    width: 3%;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    background: #008ed2;
+    border-radius: 25px;
+}
+
+.caixa-form nav .btn-sair span img {
+    margin-top: -5px;
+}
+
+.caixa-form nav .btn-sair:hover {
+    background: #053e59;
+    cursor: pointer;
+}
+
+
+/*-------------------corpo área de exebição dos elementos-------------------------*/
+
+.pagina-pagamento {
+    height: 500px;
+    display: flex;
+    padding: 10px;
+}
+
+.trasnsferenca-rec {
+    width: 75%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    margin-left: 1%;
+    position: relative;
+}
+
+.saldo-disp {
+    border: 1px solid #ccc;
+    margin-left: 2%;
+    width: 22%;
+    position: relative;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+#waller {
+    width: 100%;
+    display: flex;
+    border-radius: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+.carteira {
+    background-color: #008ed2;
+    width: 50px;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+#waller .valor {
+    background-color: #ccc;
+    border-radius: 4px;
+    margin-left: 5px;
+    color: #78a80f;
+    width: 100%;
+}
+
+#waller .valor span {
+    color: #008ed2;
+}
+
+#waller .valor h4 {
+    font-size: 1em;
+    text-align: center;
+    color: #78a80f;
+}
+
+#Add-pay {
+    float: left;
+    margin-left: 50px;
+    background: rgba(0, 0, 0, 0.0);
+    border-style: none;
+    border-radius: 4px;
+}
+
+#Add-pay a {
+    color: #fff;
+}
+
+.saldo_cliente {
+    padding: 10px;
+}
+
+.saldo {
+    float: left;
+}
+
+.cap_tabela {
+    background: rgba(65, 154, 226, 0.8);
+    padding: 5px;
+    display: flex;
+}
+
+table {
+    width: 98%;
+    margin: auto;
+    border: none;
+    margin-top: 1%;
+}
+
+th {
+    border: 1px solid #ccc;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 4px;
+}
+
+td {
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+tr:hover {
+    background-color: #677175;
+}
+
+.filtro-pagamento {
+    display: flex;
+    margin-top: 1%;
+}
+
+.custom-select {
+    width: 25%;
+    margin-left: 2%;
+}
+
+.btn-pesquisar {
+    margin-left: 12.5%;
+}
+
+.roda_tabela {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: #000;
+}
+
+.saldo-disp #pay {
+    position: absolute;
+    bottom: 4%;
+    left: 30px;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.0);
+    border-radius: 3px;
+    border: 1px solid #008dd1;
+}
+
+.saldo-disp #pay a {
+    text-decoration: none;
+}
+
+.pagamentos .table {
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.tabela-pagamento {
+    width: 99%;
+    margin: auto;
+}
+
+.saldo-disp .client_saldo .saldo_dispo h2 {
+    font-size: 22px;
+    padding: 5px;
+}
+
+
+/*----------------------------edição dos dados da listagem dos pagamentos feitos-----------------------*/
+
+.trasnsferenca-feitas {
+    width: 100%;
+}
+
+.addbord {
+    border: 2px solid #f00;
+}
+
+
+/*----------------------------edição dos elementos a pagar -----------------------*/
+
+.trasnsferenca-feitas {
+    width: 100%;
+}
+
+.trasnsferenca-feitas .custom-select {
+    margin-top: 1%;
+}
+
+.trasnsferenca-feitas .div-parapagar {
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    display: none;
+}
+
+.trasnsferenca-feitas .alert-danger {
+    padding: 15px;
+    margin: auto;
+    width: 80%;
+}
+
+.trasnsferenca-feitas .form-control {
+    width: 50%;
+    margin: 3% auto;
+}
+
+.div-deconfirmacaodadosencarregado .form-control {
+    width: 80%;
+    margin: 3% auto;
+}
+
+.card-mese {
+    padding: 20px;
+    font-size: 20px;
+}
+
+.transfesucesso {
+    text-align: center;
+    margin: 2% auto;
+}
+
+.transfesucesso .btn {
+    background: #008dd1;
+    color: #f3f3ff;
+}
+
+.enc {
+    color: #000;
+}
+
+
+/*----------------------------------Modal -------------------------*/
+
+.painel {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    margin: 0% -2.7%;
+}
+
+.painel_load {
+    margin: 15% auto;
+    width: 70%;
+    height: 400px;
+}
+
+.painel_load img {
+    margin: 15% 40%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.modal-title {
+    font: 300;
+    text-align: center;
+}
+
+
+/*.....................................Elementos do envio de solicitação de conta bancaria ..............*/
+
+.img-fluid {
+    margin: 2% 35%;
+    border-radius: 50%;
+    border: 1px solid #008dd1;
+    padding: 10px;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card {
+    width: 80%;
+    margin: 2% auto;
+}
+
+.card form {
+    width: 100%;
+    margin: 2% auto;
+}
+
+.card .btn {
+    width: 30%;
+    margin: 2% auto;
+}

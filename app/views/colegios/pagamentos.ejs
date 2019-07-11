@@ -1,0 +1,76 @@
+<% include partials/head %>
+
+    <div class="container-flue">
+        <div class="head-card">
+            <div class="table-responsive">
+                <table class="table table-border table-sm">
+                    <thead class="topo_tab">
+                        <tr class="top-tabela">
+                            <th scope="col">Data/hora</th>
+                            <th scope="col">Foto</th>
+                            <th scope="col">Encarregado</th>
+                            <th scope="col">Estudante</th>
+                            <th scope="col">Classe</th>
+                            <th scope="col">nº</th>
+                            <th scope="col">Colégio</th>
+                            <th scope="col">Valor pago</th>
+                            <th scope="col">Qtd de meses</th>
+                            <th>Meses pago</th>
+                            <th scope="col">Acção</th>
+
+
+
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <% if(transferencias.length !== []) { %>
+                            <% for(var i=0; i<transferencias.length; i++) { %>
+                                <tr class="body-tabela">
+
+                                    <td>
+                                        <%=transferencias[i].data %>
+                                            <%=transferencias[i].Anoletivo.hora %>
+                                    </td>
+
+                                    <td><img src="/uploads/alunos/<%=transferencias[i].foto%>" width="50" height="40"></td>
+                                    <th>
+                                        <%=transferencias[i].nomeEncarregado %>
+                                    </th>
+                                    <td>
+                                        <%=transferencias[i].estudante %>
+                                    </td>
+                                    <td>
+                                        <%=transferencias[i].classe%>
+                                    </td>
+                                    <td>
+                                        <%=transferencias[i].numerode_estudante%>
+                                    </td>
+                                    <td>
+                                        <%=transferencias[i].colegio%>
+                                    </td>
+                                    <td>
+                                        <%=transferencias[i].valortransferido%> Kz</td>
+                                    <td>
+                                        <%=transferencias[i].numerodemeses%>
+                                    </td>
+
+                                    <td>
+                                        <%=transferencias[i].mese %>
+                                    </td>
+
+                                </tr>
+
+                                <% } %>
+                                    <% }  else { %>
+                                        <h2 class="alert alert-success">Nenhum pagamento Feito</h2>
+                                        <% } %>
+
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <% include partials/footer %>

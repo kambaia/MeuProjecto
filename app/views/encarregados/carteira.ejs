@@ -1,0 +1,29 @@
+<% include partials/head %>
+
+    <div class="container-fluid">
+        <div class="container">
+            <div class="caixa-form">
+                <div class="content_acessar">
+                    <h2>Acesso a minha carteira</h2>
+                    <hr>
+                    <form action="/encarregados/confirmarcarteira" method="post" enctype="multipart/form-data">
+
+                        <div class="col-sm-12">
+                            <div class="caixa-inputs">
+                                <div class="input_text"> </div>
+                                <h5>Seu código secreto</h5>
+                                <input type="password" name="codigo" id="codigo_secreto" placeholder="Digite o seu código de identificação para comprovar se és mesmo tu..." class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <button type="submit" class="btn btn-primary" id="btn_transferir">Acessar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/transicao.js"></script>
+
+    <% include partials/footer%>

@@ -1,0 +1,64 @@
+
+<%include partials/head %>
+<link rel="stylesheet" href="/css/style_colegio.css">
+
+<div class="container-flue">
+        <nav class="navbar">
+            <ul class="menu-li">
+                 <a href="/colegios/configuracoes">Conta</a></li>
+                <a href="/colegios/definicao">Informações</a></li>
+            </ul>
+        
+        </nav>
+        <div class="container">
+            <div class="card-body">
+                <h2 class="card-title">Editar o Perfil</h2>
+                            <form action="/colegios/perfilcolegio" method="POST">
+
+                            <div class="row">
+                                <div class="col-mb-6">
+                                        <div class="caixa-inputs">
+                                            <div class="input_text"> </div>
+                                    
+                                                <input type="text" name="Nome_Colegio" placeholder="Nome da Instituição:"  class="form-control" value="<%=colegio%>">
+                                        </div>
+                                </div>
+
+                                <div class="col--mb-6">
+                                        <div class="caixa-inputs">
+                                            <div class="input_text"> </div>   
+                                             <select name="provincia" class="form-control" class="form-control"><br>
+                                            <option value="<%=provic%>"><%=provic%></option>
+                                            </select><br>
+                                        </div>
+                                </div>
+
+                            
+                                <div class="col--mb-12">
+                                        <div class="caixa-inputs">
+                                            <div class="input_text"> </div>
+                                        <input type="text" name="municipio" placeholder="Múniciopio:" value="<%=munic%> ">
+                                        </div>
+                                </div>
+                               
+                                <input type="text" name="bairro" placeholder="Bairro"  value="<%=bairro%>" class="form-control">
+                                
+                                <input type="text" name="rua" placeholder="Rua:" value="<%=rua%>" class="form-control">
+                                <input type="tel" name="movicel" placeholder="244-992-735-537" class="movicel" value="<%=tel_mov%>" class="form-control">
+                                <input type="tel" name="unitel" placeholder=" 244-923-735-537" class="unitel" value="<%=tel_uni%>" required class="form-control">
+                                <button type="submit" class="btn btn-primary" id="btn_terminar">Salvar</button>
+                            </div>
+                            </form>
+                        </div>
+</div>
+</div>
+
+
+<div class="rodape">
+    <span>Segurança</span>
+    <span>Ajuda</span>
+</div>
+    
+
+<% include partials/footer %>
+

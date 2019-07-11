@@ -1,0 +1,122 @@
+<% include ../partials/head %>
+
+    <link rel="stylesheet" href="/css/main_alunos.css">
+
+
+    <div class="container-flue">
+        <nav class="nav-bar">
+            <div id="">
+                <h2 class="card-title">Edição dos alunos</h2>
+            </div>
+        </nav>
+        <div class="busca">
+            <!----------------------Consulta-->
+
+            <form class="filtros" action="/colegios/alunos/filtrosdepesuisa" method="POST" id="">
+                <div class="pesquisar">
+                    <input class="form-control filtar" type="text" id="busca" name="busca" placeholder="Busncar pelo Estudante...">
+                </div>
+                <div class="filtro-aluno">
+
+                    <select class="custom-select" name="ciclo">
+									<option selected>Nivel...</option>
+									<% for(var i = 0; i < alunos.length; i++) { %>
+											<option value=" <%=alunos[i].ciclo%>"> <%=alunos[i].ciclo %></option>
+											<% } %>
+					 </select>
+
+                    </select>
+                    <select class="custom-select" name="curso">
+							<option selected>Curso...</option>
+							<% for(var i = 0; i < alunos.length; i++) { %>
+									<option value=" <%=alunos[i].curso %>"> <%=alunos[i].curso %></option>
+									<% } %>
+							  </select>
+
+                    </select>
+                    <select class="custom-select mr" name="classe">
+								
+									<option selected>Classe....</option>
+									<% for(var i = 0; i < alunos.length; i++) { %>
+										<option value=" <%=alunos[i].classe%>"> <%=alunos[i].classe%></option>
+										<% } %>
+								  </select>
+                    <select class="custom-select mr" name="ano">
+								
+										<option selected>Ano lectivo</option>...</option>
+										<% for(var i = 0; i < alunos.length; i++) { %>
+											<option value="<%=alunos[i].anoLetvo.ano %>"><%=alunos[i].anoLetvo.ano %></option>
+											<% } %>
+									  </select>
+                </div>
+                <div class="btn-pesquisar">
+                    <a href="javascript://"><button class="btn btn-info" id="btn_buscar" type="submit">Buscar</button></a>
+                </div>
+                <div class="btn-pesquisar">
+                    <button class="btn edit-estud" id="btn_buscar" type="submit"><a href="/colegios/alunos/editar">Painel de edição</a></button>
+                </div>
+                <div class="btn-pesquisar">
+                    <button class="btn add-estud" id="btn_buscar" type="submit"><a href="/colegios/addalunos">Adicionar novo</a></button>
+                </div>
+            </form>
+        </div>
+        <!-------------------------------Fim da consulta------------------------------------------------------->
+        <div class="head-card">
+            <div class="table-responsive">
+                <table class="table table-sm table-bordered">
+                    <thead class="thead-primary">
+                        <tr>
+                            <th scope="col">Id</th>
+                            <th scope="col">Nº de Estunte</th>
+                            <th scope="col" class="nome">Nome</th>
+                            <th scope="col">Nascido em</th>
+                            <th scope="col">Genero</th>
+                            <th scope="col">Curso</th>
+                            <th scope="col">Classe</th>
+                            <th scope="col">Foto</th>
+                            <th colspan="2">Ação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% for(var i = 0; i < alunos.length; i++) { %>
+                            <tr>
+
+                                <th>
+                                    <img src="/img/icon/key.png" width="20">
+                                    <%=alunos[i].codigoPessoal %>
+                                </th>
+                                <th>
+                                    <%=alunos[i].numemeroEstudante %>
+                                </th>
+                                <td>
+                                    <%=alunos[i].nome_Estudante %>
+                                </td>
+                                <td>
+                                    <%=alunos[i].data_nascimento %>
+                                </td>
+
+                                <td>
+                                    <%=alunos[i].genero %>
+                                </td>
+                                <td>
+                                    <%=alunos[i].curso %>
+                                </td>
+                                <td>
+                                    <%=alunos[i].classe%>
+                                </td>
+                                <td><a href="/colegios/alunos/editar/al/<%=alunos[i]._id%>"><img src="/uploads/alunos/<%=alunos[i].foto_perfil%>" width="50" height="40"></a></td>
+
+                                <td>
+                                    <a href="/colegios/alunos/editar/al/<%=alunos[i]._id%>"><img id="edite-bot" src="/img/icon/edit_user.png">
+                                </td>
+                                <td>
+                                    <a href=" /colegios/alunos/deletar/al/<%=alunos[i]._id%>"><img id="delete-bot" src="/img/icon/delete.png"></td>
+                            </tr>
+                            <% } %>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <% include ../partials/footer%>

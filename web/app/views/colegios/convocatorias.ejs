@@ -1,0 +1,20 @@
+
+    <% include partials/head %>
+   
+    <div class="container">
+            <div class="card-body">
+                <h2 class="card-title">Convocatoria Enviadas</h2>
+                <hr>
+                <% for(var i=0; i<convocatoria.length; i++) { %>
+                    <div>
+                        <h1>convocatoria Enviadas</h1>
+                        <% if(convocatoria.length > 0) { %>
+                            <h2><%=convocatoria[i].Comunicado.Assunto_convocatoria %></h2>
+                            <h3><%=convocatoria[i].Comunicado.subtitulo_convocatoria %></h3>
+                            <span><%=convocatoria[i].Comunicado.mesagem_convocatoria %></span>
+                            Data Enviada:<strong><%=convocatoria[i].dataEnviadaConv%></strong>
+                            <% } %>
+                    <% } %>
+      </div>
+        </div>
+

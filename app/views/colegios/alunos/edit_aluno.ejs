@@ -1,0 +1,108 @@
+<% include ../partials/head %>
+    <div id="Painel-da-convocatoria">
+        <nav class="navbar">
+
+
+        </nav>
+
+        <div class="paineis-geral">
+            <div id="titulo-dd-alunos">
+                <h2 class="card-title">Cadastrar Alunos</h2>
+                <hr>
+            </div>
+            <div id="alunos">
+
+                <% for(var i=0; i<alunos.length; i++) { %>
+                    <form action="/colegios/alunos/editar" method="post" enctype="multipart/form-data">
+                        <% if(alunos.length >0){ %>
+
+                            <div class="text-center">
+                                <img src="/uploads/alunos/<%=alunos[i].foto_perfil%>" width="150" class="img-thumbnail">
+                            </div>
+                            <div class="grupo-form">
+                                <div class="form-row">
+                                    <div class="form-group col-md-12">
+                                        <label for="inputState">Seciona o Nivel</label>
+                                        <select id="inputState" class="form-control" name="ciclo">
+                                        
+                                                <option value="Primaria">Primaria</option>
+                                                    <option value="1º Ciclo">1º Ciclo</option>
+                                                    <option value="2º Ciclo">2º Ciclo</option>
+                                </select>
+                                    </div>
+
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupFileAddon01">Actualizar</span>
+                                        </div>
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="inputGroupFile01" name="foto_perfil" aria-describedby="inputGroupFileAddon01">
+                                            <label class="custom-file-label" for="inputGroupFile01">Escolha a foto</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                        <label for="inputEmail4">Nome Completo do Estudante</label>
+                                        <input type="text" name="nome_Estudante" placeholder="Nome do Estudante:" class="form-control" value="<%=alunos[i].nome_Estudante %>" required>
+                                    </div>
+
+
+                                    <div class="form-group col-md-6">
+                                        <label for="inputPassword4">Data de nascimento</label>
+                                        <input type="date" name="data_nascimento" class="form-control" value="<%=alunos[i].data_nascimento %>" required>
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="inputEmail4">Propina</label>
+                                        <input type="text" name="propina" placeholder="Digite o valor que aluno paga: ex: 15.000 kz" class="form-control" value="<%=alunos[i].propina%>" required>
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                        <label for="inputState">Seleciona o sexo</label>
+                                        <select id="inputState" name="genero" class="form-control">
+                                                         <option value="<%=alunos[i].genero%>"><%=alunos[i].genero %></option>
+                                            </select>
+                                    </div>
+
+
+
+                                    <div class="form-group col-md-4">
+                                        <label for="inputAddress">Curso</label>
+                                        <input type="text" name="curso" placeholder="Curso:/ Ainda não" class="form-control" value="<%=alunos[i].curso %>" required>
+                                    </div>
+
+                                    <div class="form-group col-md-4">
+                                        <label for="inputAddress">Número de estudante:</label>
+                                        <input type="text" name="numemeroEstudante" placeholder="Nº de Estudante:" class="form-control" value="<%=alunos[i].numemeroEstudante %>" required>
+                                    </div>
+
+                                    <div class="form-group  col-md-2">
+                                        <label for="inputAddress">Classe:</label>
+                                        <input type="text" name="classe" placeholder="Classe:" class="form-control" value="<%=alunos[i].classe %>" required>
+                                    </div>
+
+                                    <div class="form-group  col-md-2">
+                                        <label for="inputAddress2">Turma:</label>
+                                        <input type="text" name="turma" placeholder="Turma:" class="form-control" value="<%=alunos[i].turma %>" required>
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                        <label for="inputCity">Telefone do pai</label>
+                                        <input type="tel" name="movicel" placeholder="Telefone de Pai" class="form-control" value="<%=alunos[i].tel_mae%> " required>
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                        <label for="inputAddress2">Telefone da mãe:</label>
+                                        <input type="tel" name="unitel" placeholder="Telefone de Mãe" class="form-control" value="<%=alunos[i].tel_pai%>" required>
+                                    </div>
+                                </div>
+                                <input type="hidden" name="id" value="<%=alunos[i]._id%>" required>
+                                <button type="submit" class="btn btn-primary">Salvar</button>
+                            </div>
+                            <% } %>
+                    </form>
+                    <% } %>
+            </div>
+        </div>
+    </div>
+
+    <% include ../partials/footer%>

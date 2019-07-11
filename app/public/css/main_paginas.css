@@ -1,0 +1,461 @@
+/* banner de boas vindas */
+
+.banner_site {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(../img/bacgrand03.jpg);
+    height: 300px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.cabecalho .logo {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+
+.carousel-inner {
+    width: 100%;
+    background: #000;
+}
+
+.carousel-item {
+    width: 40%;
+    background: #000;
+}
+
+div#discri {
+    text-align: center;
+    width: 70%;
+    position: absolute;
+    top: 30%;
+    left: 13%;
+}
+
+div#discri h2 {
+    color: #fff;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.4);
+}
+
+div#discri span {
+    font-size: 1.2em;
+    width: 80%;
+    line-height: 1.1em;
+    font-weight: 400;
+    color: #fff;
+}
+
+div#discri .btn {
+    width: 35%;
+    padding: 8px;
+    margin-top: 8%;
+    background-color: #2a5af5;
+    color: #ccc;
+    border-style: none;
+}
+
+div#discri .btn:hover {
+    background-color: #04248e;
+}
+
+.cabecalho .logo .logo-img {
+    width: 30%;
+    margin-left: 3%;
+}
+
+.cabecalho .logo .sub-menu {
+    width: 50%;
+    position: relative;
+    left: 0px;
+    text-align: center;
+}
+
+.cabecalho .logo .botao {
+    width: 20%;
+    top: 20px;
+    left: 35%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.0);
+    color: #fff;
+    font-size: 1.2em;
+    border: none;
+}
+
+.cabecalho .logo .btn:hover {
+    border: none;
+    border-style: none;
+}
+
+.cabecalho .logo .acessar .escreva:hover {
+    background: rgba(0, 0, 0, 0.0);
+    color: #fff;
+}
+
+.cabecalho .logo .acessar .login:hover {
+    background: #fff;
+    color: #000;
+}
+
+
+/* menus do banner*/
+
+.cabecalho ul {
+    outline-style: none;
+}
+
+.cabecalho .page {
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.4);
+}
+
+.cabecalho .nav {
+    height: 50px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+}
+
+.cabecalho .nav .menus {
+    position: absolute;
+    width: 100%;
+    top: 13%;
+    left: 20%;
+}
+
+.cabecalho .nav .menus li {
+    float: left;
+    line-height: 50px;
+    display: block;
+    padding: 0px 30px;
+    margin-top: 0.8%;
+}
+
+.cabecalho .nav .menus li:hover {
+    background-color: rgba(1, 21, 26, 0.9);
+    color: #ff0;
+    border-top: 1px solid #1941c6;
+    margin-top: 0.8%;
+    text-align: center;
+    padding: 0px 30px;
+}
+
+
+/*--------------------------contacto-------------------*/
+
+.caixa-form {
+    margin-top: 50px;
+    padding: 30px;
+}
+
+.caixa-inputs {
+    position: relative;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.caixa-inputs .input {
+    position: relative;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.input_text {
+    position: absolute;
+    line-height: 30px;
+    font-size: 14px;
+    transition: .5s;
+    opacity: .5;
+}
+
+.input_text .focus {
+    transform: translateY(-30px);
+    font-size: 14px;
+    opacity: 1;
+    color: #00bcd4;
+}
+
+textarea {
+    height: 100px;
+}
+
+.botao-enviar {
+    width: 70%;
+    background: #00bcd4;
+    text-align: center;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    color: #fff;
+    margin-left: 15%;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.colegio {
+    border: 1px solid #ccc;
+    height: 920px;
+    z-index: 0;
+}
+
+.encarregado {
+    border: 1px solid #ccc;
+    height: 910px;
+}
+
+.fotoperfil {
+    margin: 1% auto;
+    width: 100%;
+    padding: 4px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.img-thumbnail {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.btn {
+    width: 40%;
+    margin: auto 40%;
+    background-color: #000;
+}
+
+
+/*.............................sobre ........................*/
+
+
+/* Primeir bloco*/
+
+.bloco1 {
+    display: flex;
+}
+
+.figure2 {
+    width: 50%;
+    margin-left: 0% 3%;
+    text-align: center;
+}
+
+.figure1 {
+    width: 50%;
+    margin-left: 0% 3%;
+    text-align: center;
+}
+
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+
+/* Primeir segundo*/
+
+.bloco2 {
+    display: flex;
+}
+
+.figure2 {
+    width: 50%;
+    margin-left: 0% 3%;
+    text-align: center;
+}
+
+.figure1 {
+    width: 50%;
+    margin-left: 0% 3%;
+    text-align: center;
+}
+
+.content_discrica {
+    display: flex;
+}
+
+.content_discrica .figure {
+    width: 40%;
+}
+
+.content_discrica .sobre_pco {
+    color: #002;
+    font-size: 20px;
+    text-align: justify;
+    width: 60%;
+    margin-left: 6%;
+}
+
+
+/*////////////////////////sobre////////////////////////////////////*/
+
+.foto-servico {
+    box-shadow: 0px 0px 10px;
+    padding: 10px;
+}
+
+.foto-servico img {
+    width: 100%;
+    box-shadow: 0px 0px 10px;
+    width: 600px;
+}
+
+.descricao-servico {
+    text-align: justify;
+    width: 50%;
+    margin-left: 2%;
+}
+
+.descricao-servico span {
+    color: #191917;
+    font-size: 1.2em;
+    margin: 1% 0%;
+    box-sizing: border-box;
+}
+
+#escriacao-1 {
+    border-radius: 50%;
+    width: 300px;
+}
+
+
+/*...............................equipa .................*/
+
+.grupo {
+    overflow: hidden;
+    text-align: center;
+    padding: 60px;
+}
+
+.equipa {
+    margin-bottom: 20px;
+}
+
+.equipa a {
+    display: inline-block;
+    margin: 0 30px;
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.equipa a img {
+    width: 100%;
+    filter: grayscale(100%);
+    transition: 0.4s all;
+}
+
+.equipa a:hover>img {
+    filter: none;
+}
+
+.border {
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 160px;
+    background: #3498db;
+    margin-bottom: 20px;
+}
+
+.section {
+    width: 600px;
+    margin: auto;
+    font-size: 18px;
+    color: #000;
+    text-align: justify;
+    height: 0;
+    overflow: hidden;
+}
+
+.section:target {
+    height: auto;
+}
+
+.nome {
+    display: block;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font: 20px;
+}
+
+
+/*  --------------------------------confirmação do contacto---------------------*/
+
+.alert-success {
+    text-align: center;
+    font-size: 25px;
+}
+
+.feedback {
+    text-align: center;
+    margin-top: 2%;
+    font-size: 20px;
+}
+
+.dialogin-img {
+    width: 100%;
+    width: 200px;
+}
+
+
+/*/////////////////////////////////////////////Mapa de localização PCO///////////////////////////////*/
+
+#mapa {
+    padding: 20px;
+    height: 600px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 500px) {
+    .colegio {
+        border: 1px solid #ccc;
+        height: 100%;
+        z-index: 1;
+    }
+    .encarregado {
+        border: 1px solid #ccc;
+        height: 100%;
+        z-index: 1;
+    }
+    #discri h2 {
+        font-size: 1em;
+    }
+    .bloco1 {
+        display: block;
+    }
+    .figure2 {
+        width: 100%;
+        margin-left: 0% 3%;
+        text-align: center;
+    }
+    .figure1 {
+        width: 100%;
+        margin-left: 0% 3%;
+        text-align: center;
+    }
+    .bloco2 {
+        display: block;
+    }
+    /*sobre nós */
+    .foto-servico img {
+        width: 100%;
+        box-shadow: 0px 0px 10px;
+    }
+    .descricao-servico {
+        width: 100%;
+    }
+    .descricao-servico span {
+        color: #131311;
+        font-size: 1em;
+        box-sizing: border-box;
+    }
+}

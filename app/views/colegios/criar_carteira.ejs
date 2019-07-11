@@ -1,0 +1,48 @@
+<% include partials/head %>
+    <div id="Painel-da-convocatoria">
+        <nav class="navbar">
+
+
+        </nav>
+
+        <div class="paineis-geral-carteira">
+            <div id="acesso-carteira">
+                <div id="titulo-dd-carteira">
+                    <h2>Cria a sua carteira PCO</h2>
+                    <hr>
+                </div>
+                <div class="imglload">
+                    <img src="/img/loger.gif" width="90">
+                </div>
+                <hr>
+                <div id="grupo-daabertura-carteira">
+                    <form action="/colegios/criar_conta" method="post">
+
+                        <div class="col-sm-12">
+                            <div class="caixa-inputs">
+                                <div class="input_text"> </div>
+                                <input type="text" name="nome" placeholder="Nome da Instituição Escolar:" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="caixa-inputs">
+                                <div class="input_text"> </div>
+                                <input type="text" name="numeroBI" placeholder="Digite aqui o  número de identificação fiscal cadastrada na plataforma:" class="form-control" required max="14" min="14">
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="caixa-inputs">
+                                <div class="input_text"> </div>
+                                <input type="email" name="email" placeholder="Entre com o email do cliente:" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <button type="submit" class="btn btn-primary" id="btn_transferir">Criar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <% include partials/footer%>

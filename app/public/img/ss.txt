@@ -1,0 +1,16 @@
+
+                  <a href="/login">Login</a>
+                  <a class="home-nava" href="/">Menu</a>
+                  
+              </nav>
+            <div class="logo"><h2><img src="img/logo1.png"></h2></div>
+            <nav class="nav">
+              <ul class="menus">
+                  <li><a class="page" href="/">Home</a></li>
+                  <li><a class="page" href="#services">Servicos </a></li>
+                  <li><a class="page" href="#bancos">Bancos</a></li>
+                  <li><a class="page" href="/usuario">Criar conta</a></li>
+                  <li><a class="page" href="#sobre">Sobre</a></li>
+                  <li><a class="page" href="#equipa">Equipa</a></li>
+                  <li><a class="page" href="#contacto">Contactas</a></li>
+              </ul>

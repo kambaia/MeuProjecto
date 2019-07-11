@@ -1,0 +1,110 @@
+body{
+    background-color: #054479;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Bitstream Vera Sans", sans-serif;
+    color: #eaeeef;
+    margin: 0;
+}
+.banner{
+    /*background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,145,0.5)), url("../img/10.jpg"); */ 
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+.cabecalho{
+    
+    text-align: center;
+    background: #fff;
+    width: 100%;
+     background-color: rgba(0,0,0,0.5);
+     height: 200px;
+    box-shadow: 1px 0px 10px rgba(0,0,0,0.5);
+}
+
+.cabecalho{
+    background-color: #fff;
+} 
+.cabecalho img  {
+    width:150px;
+   
+    float: left;
+    margin-left: 40px;
+    }
+.sub-nav{
+    background: #fff;
+    height: 50px;
+    box-shadow: 0 1px 0px #ccc;
+    border-bottom: 1px solid#ccc;
+    
+}
+.sub-nav a {
+    float: right;
+    margin-right: 20%;
+    margin-top: 1%;
+}
+
+.sub-nav .home-nava{
+    float: left;
+    margin-left: 10%;
+    margin-top: 1%;
+}
+
+.nav{
+    
+ background-color: #52627c;
+    height: 60px;
+    margin: 1.8% 0;
+    width: 100%;
+    box-shadow: 0 2px 0px #000;
+    border-bottom: #fff;
+    float: right;
+
+   
+    
+}
+.nav ul li{
+    float: left;
+    display: inline-block;
+    height: 60px;
+    padding: 15px 20px;
+    
+    
+    
+    
+    
+    
+}
+.nav ul{
+    padding: 0;
+}
+.nav ul li a{
+    color: #fff;  
+    text-decoration: none;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2em
+}
+.nav ul li:hover{
+   background-color: #19468e;
+    
+}
+
+
+.slid{
+    width: 90%;
+    height: 400px;
+    background-color: rgba(0,0,0,0.7);
+    margin: 1% auto;
+}
+.slid img{
+    width: 100%;
+    height: 400px;
+} 
+
+
+@media screen and (max-width: 700px) {
+  .nav ul li{
+   display: block;
+      float: none;
+  }

@@ -1,0 +1,66 @@
+﻿<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/login-style.css">
+<title>Pagamentos Colegias Online</title>
+<header>
+    <div class="infor">
+        <div class="dialog1">
+            <h3>PCO DIRECTO EM SUA CASA</h3>
+            <h2>ASSIM FICA MAIS FÁCIL!</h2>
+        </div>
+        <div class="dialog">
+            <span>FAZER O PAGAMENTO DAS PROPINAS DOS SEUS FILHOS NO TELEMÓVEL OU NO COMPUTADOR</span><br>
+            <li>Faça já a escrição e começa a pagar as propinas dos seus Candengues</li>
+        </div>
+
+    </div>
+</header>
+<div class="caixa-main">
+    <div class="cab-login">
+        <h2>PCO DIREITO AO SEU PC</h2>
+
+    </div>
+
+    <div class="caixa-login">
+        <% if(validacao.length >0){ %>
+            <div class="erro">
+                <strong>Atensão!</strong>
+                <% for(var i=0; i<validacao.length; i++){ %>
+                    <ul>
+                        <li>
+                            <%=validacao[i].msg %>
+                        </li>
+                    </ul>
+                    <% } %>
+            </div>
+            <%  } %>
+                <section class="cadastrar" id="cadastrar">
+                    <img src="img/user1.png" width="100">
+                    <form action="/auth" method="post">
+                        <div class="form-group">
+                            <input class="form-control  email" type="text" id="email" name="email" placeholder="Email:" autocomplete="off">
+                        </div>
+                        <div class="form-group">
+
+                            <input class="form-control senha" type="password" id="senha" name="senha" placeholder="Senha:">
+                        </div>
+                        <div class="btn-acesso-registo">
+                            <button type="submit" class="btn btn-primary" id="enviar">Acessar</button>
+                            <a href="/usuario" class="btn btn-primary btnEscrever">Cadastrar-se</a>
+                        </div>
+                        <div class="irLogin">
+                            <span>Escqueceu a palavra pass? <a href="/login">Clica aqui</a></span>
+                        </div>
+                    </form>
+                </section>
+                <div class="painel">
+                    <div class="painel_load">
+                        <img src="/img/load/tenor.gif">
+                    </div>
+                </div>
+    </div>
+</div>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/additional-methods.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/localization/messages_pt_PT.js"></script>
+<script src="js/menu.js"></script>

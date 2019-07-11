@@ -1,0 +1,39 @@
+
+<% include partials/head %>
+<div class="container-fluid">
+        <div class="corpo">
+
+                        <h2>Resultado conta</h2>
+                        <table class="table table-striped table-bordered">
+                        <thead class="topo_tab">
+                            <tr>
+                            <th scope="col">Nome do Cliente</th>
+                            <th scope="col">Número de conta</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Valor Desponivél</th>
+                            <th scope="col">Data de registro</th>
+                            <th colspan="2" class="acao">Ação</th>
+                            </tr>
+                        </thead>
+                        <% for(var i=0; i<data.length; i++){ %>
+                        <tbody>
+
+                        <tr>
+                            <% if(data.length >0){ %>
+
+                                <td><%= data[i].nome %></td>
+                                <td><%= data[i].numeroConta %></td>
+                                <td><%= data[i].email %></td>
+                                <td><%= data[i].valor %></td>
+                                <td><%= data[i].data %></td>
+                                <td><button type="button" class="btn btn-danger"><a href="<%= data[i]._id %>">Eliminar</a></td>
+                            <% } %>
+                        </tr>
+
+                                    <% } %>
+                            </tbody>
+                        </table>
+        
+    </div>
+</div>
+<% include partials/footer%>

@@ -1,0 +1,42 @@
+<% include partials/head %>
+    <div class="container-fluid">
+        <div class="corpo">
+            <div class="criar-carteira">
+
+                <h2>Cria a sua carteira PCO</h2>
+                <div class="imglload">
+                    <img src="/img/loger.gif" width="90">
+                </div>
+                <hr>
+
+                <form action="/encarregados/solicitar-carteira" method="post">
+
+                    <div class="col-sm-12">
+                        <div class="caixa-inputs">
+                            <div class="input_text"> </div>
+
+                            <input type="text" name="nome" placeholder="Confirma seu com o seu nome:" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="caixa-inputs">
+                            <div class="input_text"> </div>
+                            <input type="text" name="numeroBI" placeholder="Digite aqui o seu  número do BI Ou nº de NIF:" class="form-control" required max="14" min="14">
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="caixa-inputs">
+                            <div class="input_text"> </div>
+                            <input type="email" name="email" placeholder="Seu email:" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12">
+                        <button type="submit" class="btn btn-primary" id="btn_transferir">Criar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <% include partials/footer%>

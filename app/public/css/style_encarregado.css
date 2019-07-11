@@ -1,0 +1,233 @@
+/* --------------------------------------------fim-------------------*/
+
+#Corpo-encarregado {
+    display: flex;
+}
+
+.usuario-bainner-direirto {
+    width: 23%;
+}
+
+.usuario-bainner-direirto h5 {
+    padding: 5px;
+    color: #565D5D;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.usuario-bainner-esquerdo {
+    width: 77%;
+    margin-left: 2%;
+}
+
+#foto_perfil {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+#foto_perfil #boa-vidas-usuario {
+    font-size: 1.2em;
+}
+
+.foto_perfil #boa-vidas {
+    padding: 5px;
+}
+
+.resumo-dados {
+    display: flex;
+    box-shadow: 1px 2px 5px #ccc;
+    height: 80px;
+}
+
+#home-page {
+    width: 4em;
+    background: #4e5051;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 80px;
+}
+
+#discri-home-page {
+    width: 50%;
+    margin-left: 1%;
+}
+
+#discri-home-page span {
+    font-size: 0.8em;
+    color: #4e5051;
+}
+
+#discri-home-page h4 {
+    font-size: 1.2em;
+    color: #4e5051;
+}
+
+.sob-encarredo {
+    border: 1px solid #ccc;
+}
+
+#menu-encarregado {
+    border: 1px solid #cccc;
+    margin: 0 auto;
+}
+
+#menu-encarregado li {
+    border-bottom: 1px solid #ccc;
+    margin-left: 20px;
+}
+
+
+/*******************************painel principal para ver todos os dados registrados ****************/
+
+.resumo-de-tudo {
+    width: 100%;
+    background: #fff;
+    width: 98%;
+    margin: 0 auto;
+}
+
+#descri-actualizacao-dado {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    background: #f6f6f6;
+    color: #7e7f81;
+}
+
+
+/*-------------------------------------edição do painel acessar minha conta ---------------*/
+
+.caixa-form {
+    width: 100%;
+    padding: 20px;
+    z-index: 0;
+}
+
+.caixa-form .content_acessar {
+    width: 65%;
+    margin: auto;
+    padding: 10px;
+}
+
+.caixa-form .content_acessar input {
+    width: 90%;
+}
+
+.caixa-form h2 {
+    text-align: center;
+}
+
+.caixa-form .btn {
+    width: 30%;
+    margin-left: 30%;
+    margin-top: 2%;
+}
+
+
+/*  Mensagem de confirmar o gmail --------------*/
+
+.row {
+    width: 90%;
+    margin: 4% auto;
+    position: relative;
+}
+
+.row h1 {
+    color: #2f3033;
+    font-size: 30px;
+    text-align: center;
+}
+
+.row h2 {
+    color: #2f3033;
+    font-size: 20px;
+    text-align: center;
+}
+
+.bt_decisao {
+    width: 100%;
+    display: flex;
+    height: 200px;
+    margin-top: 30px;
+}
+
+.bt_decisao .btn {
+    width: 15%;
+    position: absolute;
+    top: 100%;
+    background-color: #1f82ad;
+    color: #fff;
+}
+
+.bt_decisao .btn1 {
+    width: 15%;
+    position: absolute;
+    left: 80%;
+}
+
+.criar-carteira .imglload {
+    text-align: center;
+    margin: auto;
+    width: 100%;
+}
+
+
+/*-------------------corpo área de exebição dos elementos-------------------------*/
+
+.content {
+    height: 560px;
+    display: flex;
+    z-index: 1;
+}
+
+.content .saldo-disp {
+    width: 30%;
+    background: #ccc;
+    position: relative;
+    margin-left: 2%;
+    height: 550px;
+    z-index: 1;
+}
+
+.content .cap_tabela {
+    text-align: center;
+    height: 180px;
+    border-bottom: 1px solid #008dd1;
+    z-index: 1;
+}
+
+.foto_perfil {
+    position: relative;
+    height: 140px;
+    width: 140px;
+    left: 20%;
+    top: 5%;
+    border-radius: 50%;
+    z-index: 3;
+}
+
+.foto_perfil img {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    width: 100%;
+    transition: 0.4s all;
+    border-radius: 50%;
+    border: 4px solid #008dd1;
+}
+
+
+/* -----------------------------todas as convocatorias ----------------------*/
+
+.todas_convocatorias {
+    width: 96%;
+    margin: 0% auto;
+}
+
+.table {
+    background: #fff;
+}

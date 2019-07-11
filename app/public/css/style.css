@@ -1,0 +1,167 @@
+    body {
+        padding-top: 75px;
+    }
+    
+    #topo-site {
+        background: red;
+        height: 300px;
+    }
+    
+    .box-shadow {
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .05), 0 4px 8px 0 rgba(0, 0, 0, .05);
+    }
+    
+    #logo-pco {
+        width: 100%;
+    }
+    
+    #home-quote {
+        background-size: cover;
+    }
+    
+    .navbar-brand {
+        margin: 0% 3%;
+        padding: 5px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+        width: 150px;
+    }
+    
+    .navbar-toggler {
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+    
+    .navbar-nav {
+        background-color: #fff;
+        background-color: rgba(0, 0, 0, 0.0);
+        margin-right: 2%;
+    }
+    
+    .navbar {
+        background: linear-gradient(-90deg, rgba(0, 0, 0, 0.4), rgba(2, 51, 82, 0.2)), url(../img/bac-paga.gif) repeat-x;
+        height: 80px;
+    }
+    
+    .navbar-light {
+        box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+    }
+    
+    .nav-link {
+        color: #fff;
+    }
+    
+    .nav-link:hover {
+        color: #1baae1;
+        border-bottom: 1px solid #1baae1;
+    }
+    
+    .dropdown-menu {
+        background: #1e8bce
+    }
+    
+    .dropdown-item {
+        color: #fff;
+    }
+    
+    .dropdown-item:hover {
+        background: #1e8bce;
+        color: #1baae1;
+    }
+    
+    .mycolor {
+        background: #1e8bce
+    }
+    
+    #entreconta {
+        color: #ccc;
+        font: 700;
+        font-size: 2em;
+    }
+    
+    @media (max-width: 767px) {
+        #home-quote {
+            background: #0404B4;
+            background-size: cover;
+            width: 100%;
+        }
+        .navbar-nav {
+            background-color: rgb(1, 24, 39);
+            margin-right: 2%;
+            margin-top: 13%;
+            padding: 20px;
+        }
+        #logo-pco {}
+        .navbar-brand {
+            position: absolute;
+        }
+        #home-quote .display-4 {
+            font-size: 2.5rem;
+        }
+        body {
+            padding-top: 0px;
+        }
+        .fixed-top {
+            position: relative;
+        }
+        .navbar {}
+        .navbar-toggler-icon {
+            background-color: rgba(0, 0, 0, .2);
+        }
+        .lista-plano li+li {
+            border-top: 1px solid rgba(238, 238, 238, 0.2);
+        }
+        .lista-plano li {
+            padding: 1rem;
+        }
+        .linha1 {
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+        }
+        .linha2 {
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+        }
+        /* icones */
+        .linkshome {
+            display: flex;
+            justify-content: center;
+        }
+        .czr-link-mask {
+            margin: 2rem;
+        }
+        .czr-link-mask .box {
+            width: 200px;
+            height: 200px;
+            margin-bottom: 20px;
+            border-radius: 50%;
+            position: relative;
+        }
+        .czr-link-mask .box::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            border-radius: 50%;
+            box-shadow: inset 0 0 0 20px #fff;
+            z-index: 2;
+            transition: box-shadow 300ms;
+        }
+        .czr-link-mask a:hover .box::after {
+            box-shadow: inset 0 0 0 0px #fff;
+        }
+        .czr-link-mask .box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 2px solid white;
+            box-sizing: border-box;
+        }
+        .slides {
+            width: 100vw;
+        }
+    }

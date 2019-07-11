@@ -1,0 +1,46 @@
+<% include partials/head %>
+    <nav class="nav-bar">
+        <div id="enviar-convoca">
+            <h2 class="card-title">Editar a informação </h2>
+        </div>
+    </nav>
+    <div class="paineis-geral">
+
+        <div class="paineis-geral">
+
+            <div class="card" id="card-envio-convocatoria">
+                <% for(var i=0; i<convocatoria.length; i++) { %>
+
+                    <form action="/colegios/verconvocatoria/edit" method="POST">
+                        <% if(convocatoria.length > 0) { %>
+
+                            <div class="form-group mb-2">
+
+                                <input type="text" name="Assunto_convocatoria" placeholder="Titule da Convocatória:" class="form-control" value=" <%=convocatoria[i].Comunicado.Assunto_convocatoria %>" required>
+                            </div>
+                            <div class="form-group mb-2">
+                                <input type="text" name="subtitulo_convocatoria" placeholder="Subtitulo:" class="form-control" value="<%=convocatoria[i].Comunicado.subtitulo_convocatoria %> " required>
+                            </div>
+
+                            <div class="form-group mb-2">
+                                <label>Data de encontra ou data da realização da Convocatória</label>
+
+                                <input type="date" name="data_convocatoria" class="form-control" value="<%=convocatoria[i].Comunicado.data_convocatoria%>" required>
+                            </div>
+                            <div class="form-group mb-2">
+                                <textarea class="form-control" name="mesagem_convocatoria" required><%=convocatoria[i].Comunicado.mesagem_convocatoria%></textarea>
+                            </div>
+                            <div class="form-group mb-2">
+                                <input type="hidden" name="id" value="<%=convocatoria[i]._id%>" required>
+
+                                <button type="submit" class="btn btn-primary" id="btn_terminar">Enviar</button>
+                            </div>
+                            <% } %>
+                    </form>
+                    <% } %>
+            </div>
+
+        </div>
+    </div>
+
+    <% include partials/footer %>

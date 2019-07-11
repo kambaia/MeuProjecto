@@ -1,0 +1,23 @@
+ 
+  <% include partials/head %>
+  <div class="container-fluid">
+      <div class="corpo">
+            <div class="criar-carteira">
+                <h2>Consultar conta</h2>
+                <hr>
+            <form action="/bancos/consultarconta" method="post">
+                        <div class="col-sm-12">
+                            <div class="caixa-inputs">
+                                <div class="input_text"> </div>
+                                <label>Nº da conta:</label>
+                              <input type="text" name="numeroConta" placeholder="Digite aqui o número de conta do cliente:" class="form-control" required max="14" min="14">
+                            </div>
+                        </div>
+                                       
+                        <div class="col-sm-12">
+                                <button type="submit" class="btn btn-primary" id="btn_transferir">Verificar</button>
+                        </div>
+                </form>
+            </div>
+        </div>
+     </div>

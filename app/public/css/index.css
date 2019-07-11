@@ -1,0 +1,64 @@
+
+
+#container{
+    margin: auto;
+    width: 96%;
+    height: 550px;
+}
+.content{
+    display: flex;
+    position: relative;
+}
+
+.content .conteudo_late{
+    width: 30%;
+    display: flex;
+    text-align: center;
+    position: relative;
+    border-right: 1px solid #ccc;
+}
+.content .conteudo_direct{
+    width: 70%;
+    display: flex;
+    height: 550px;
+}
+
+.content .conteudo_late .topo_use{
+   width: 40%;
+   background: rgba(0, 0, 0, 0.4);
+   top: -30%;
+   height: 150px;
+   border-radius: 150px;
+   position: relative;
+   margin: auto;
+}
+.content .conteudo_late .use h3{
+    width: 100%;
+    color: #ff8888;
+    position: absolute;
+    left: 0px;
+    top: 40%;
+    border-top: 2px solid #ccc;
+ }
+ 
+.content .conteudo_late .topo_use img{
+    position: absolute;
+    width: 120px;
+    left: 20px;
+    top: 30px;
+}
+
+.content .conteudo_late .sobre_use{
+    width: 50%;
+    height: 210px;
+    position:absolute;
+    margin: auto;
+    width: 100%;
+    top: 50%;
+ }
+
+ .content .conteudo_late .sobre_use span{
+    color: #000;
+    padding: 10px;
+    font-size: 20px;
+ }

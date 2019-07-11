@@ -1,0 +1,108 @@
+<% include partials/head %>
+    <hr>
+    <!--FORMULARIO DE EDIÇÃO DO COLEGIO-->
+
+
+    <div class="container-fluid" id="Corpo-encarregado">
+        <section class="usuario-bainner-direirto">
+            <div id="foto_perfil">
+                <%if(foto==undefined) { %>
+                    <img src="/uploads/img_colegios/logo.png" width="120">
+                    <% } else { %>
+                        <img src="/uploads/img_encarregados/<%=foto %>" width="120" style="border-radius: 50%;" height="120">
+                        <% } %>
+                            <div id="boa-vidas">
+                                <span id="boa-vidas-usuario"><strong>Olá! <%=nome%></strong><br> Seja Bem-Vindo/a! </span>
+                                <br>
+
+                            </div>
+            </div>
+            <div class="sob-encarredo">
+                <h3>Sobre
+                    <%=nome%>
+                </h3>
+                <ul id="menu-encarregado">
+                    <li>
+                        <span>Nome completo: <%=nome_completo %></span><br>
+
+                        <span>Data de nascimento: <%=datanas %></span>
+                    </li>
+                    <li>Endereço<br>
+                        <span>Provincia: <%=provic %></span><br>
+                        <span>Múnicipio<%=munic %></span><br>
+                        <span>Cidade/Bairro: <%=bairro %></span><br>
+                        <span>Rua:<%=rua %></span>
+                    </li>
+                    <li>Contactoo<br>
+                        <span><%=tel_mov %></span>/
+                        <span><%=tel_uni %></span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+        <section class="usuario-bainner-esquerdo">
+            <div class="resumo-dados">
+                <div id="home-page">
+                    <img src="/img/icon/home_page.png " width="40 ">
+                </div>
+                <div id="discri-home-page">
+                    <span>Painel do encarregado</span>
+
+                    <h4>Encarregado: <strong><%=nome%></strong></h4>
+                </div>
+            </div>
+            <div id="descri-actualizacao-dado">
+                <span> Você pode ver e actualizar seus dados, Alunos, convocatórias , professor e todos pagamentos</span>
+            </div>
+            <div class="tabela-dos-pagamento">
+                <table class="table">
+                    <thead class="topo_tab">
+                        <tr>
+                            <th scope="col">Data</th>
+                            <th scope="col">Enviado por</th>
+                            <th scope="col">Assunto</th>
+                            <th scope="col">Comunicado</th>
+                            <th scope="col">colégio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tbody>
+                            <% for(var i=0; i<convocatoria.length; i++){ %>
+                                <% if (convocatoria[i] !==[]) {%>
+                                    <tr>
+                                        <% console.log("Foram encontrados mais de") %>
+                                            <% console.log(convocatoria[i].count) %>
+                                                <th>
+                                                    <%=convocatoria[0].Comunicado.data_convocatoria%>
+                                                </th>
+                                                <th>
+                                                    <%=convocatoria[0].usuarioLogin %>
+                                                </th>
+                                                <th>
+                                                    <%=convocatoria[0].Comunicado.Assunto_convocatoria %>
+                                                </th>
+                                                <th>
+                                                    <%=convocatoria[0].Comunicado.mesagem_convocatoria %>
+                                                </th>
+                                                <th>
+                                                    <%=convocatoria[0].Colegio %>
+                                                </th>
+                                    </tr>
+
+                                    <% } else{ %>
+                                        <h5>Nenhum dados encontrado</h5>
+                                        <% } %>
+                        </tbody>
+                        <% } %>
+
+                </table>
+                <div class="roda_tabela ">
+                    <a href="/encarregados/todasconvocatorias " class="btn_avancar ">Ver todas</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <% include partials/footer%>

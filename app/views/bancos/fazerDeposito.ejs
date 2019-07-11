@@ -1,0 +1,31 @@
+ 
+  <% include partials/head %>
+  <div class="container-fluid">
+      <div class="corpo">
+            <div class="criar-carteira">
+                <h2>Fazer deposito</h2>
+                <hr>
+            <form action="/bancos/fazerdeposito" method="post">
+                    
+                
+                        <div class="col-sm-12">
+                            <div class="caixa-inputs">
+                                <% for(var i=0; i<data.length; i++){ %>
+                                    <span>Nome: <%= data[i].nome %></span><br>
+                                    <span>Nº de conta:<%= data[i].numeroConta %></span><br>
+                                    <span>Valor de saldo: <%= data[i].valor %> kz</span><br>
+                                  
+                                <% } %>
+                                <hr>
+                                <div class="input_text"> </div>
+                                  <label>Valor a depositar</label>
+                                <input type="number" name="valor" placeholder="Digita o valor a pagar" class="form-control" required>
+                            </div>
+                        </div>                
+                        <div class="col-sm-12">
+                                <button type="submit" class="btn btn-primary" id="btn_transferir">Depositar</button>
+                        </div>
+                </form>
+            </div>
+        </div>
+     </div>

@@ -1,0 +1,84 @@
+<% include partials/head %>
+    <link rel="stylesheet" href="css/main_paginas.css">
+    <section class="banner_site">
+        <header class="cabecalho">
+            <div id="discri">
+                <h2 id="titulo">Entre em contacto</h2>
+            </div>
+        </header>
+    </section>
+    </section>
+
+    <section class="container">
+        <div class="my-5 text-center">
+            <h3 class="text-primary">Contato</h3>
+        </div>
+        <div class="row">
+            <div class="col-lg mb-5">
+                <div id="mapa">
+                    <form action="/enviarcontato" method="post" name='contact' class='bg-light rounded p-4 box-shadow'><input type='hidden' name='form-name' value='contact' />
+                        <% if(validacao.length >0){ %>
+                            <div class="alert alert-danger">
+                                <strong>Atensão!</strong>
+                                <% for(var i=0; i<validacao.length; i++){ %>
+                                    <ul>
+                                        <li>
+                                            <%=validacao[i].msg %>
+                                        </li>
+                                    </ul>
+                                    <% } %>
+                            </div>
+                            <%  } %>
+
+                                <div class="form-group">
+                                    <label for="name">Nome</label>
+                                    <input type="text" name="nome" class="form-control" placeholder="Primeiro Nome:">
+
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email" class="form-control" />
+
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Contacto</label>
+                                    <input type="text" name="telefone" class="form-control" placeholder="Número de Telefone:">
+
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Mensagem</label>
+                                    <textarea name="mensagem" class="form-control" rows="4"></textarea>
+
+                                </div>
+                                <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg mb-5">
+                <div id="mapa">
+                    <h3 class="text">Mapa De cocalização</h3>
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52138.262467811095!2d13.15620890289682!3d-8.95739001804634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a521fe402d4b1f5%3A0x90cb5cfba3f4857d!2sBenfica%2C+Belas!5e1!3m2!1spt-PT!2sao!4v1561900977844!5m2!1spt-PT!2sao"
+                        width="600" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <a href="#"></a>
+
+                    <h2 class="h6">DADOS DE CONTATO</h2>
+                    <ul class="list-unstyled text-secondary">
+                        <li><a href="pco.pagamentoscolegiasonline@gmail.com">pco.pagamentoscolegiasonline@gmail.com</a></li>
+                        <li><a href="tel:1938568213">244 991735637</a></li>
+                        <li><a href="tel:19998421526">244 923720407</a></li>
+                    </ul>
+
+
+                    <ul class="list-unstyled" style="max-width: 260px">
+                        <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="https://www.facebook.com/PCO-pagamentos-col%C3%A9gias-Online-900374146769331/" target="_blank">Facebook</a></li>
+                        <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="https://www.instagram.com/mdsolutionsweb/" target="_blank">Instagram</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <% include partials/footer%>
